@@ -39,6 +39,7 @@ The same tables, rebuilt for the tools analysts use day to day:
 ![Power BI report, Overview page](docs/img/powerbi_overview.png)
 ![Power BI report, Markets page](docs/img/powerbi_markets.png)
 ![Power BI report, Shocks & warning page](docs/img/powerbi_warning.png)
+![Excel workbook, Dashboard sheet](docs/img/excel_dashboard.png)
 
 ## Data and scraping
 

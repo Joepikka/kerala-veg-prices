@@ -24,6 +24,12 @@ def main():
     w["series"] = w.region + " " + w.commodity.str.lower()
     w.pivot_table(index="week", columns="series", values="rs_per_kg").round(2).to_csv(CHARTS / "01_kerala_vs_india_weekly.csv")
 
+    # 1b. Same series, one row per week and crop: the site's line chart with a crop filter (Flourish 30761381).
+    long = w.pivot_table(index=["week", "commodity"], columns="region", values="rs_per_kg").round(2).reset_index()
+    long.rename(columns={"commodity": "crop", "Kerala": "Kerala markets", "India": "All-India (arrival-weighted)"}) \
+        .sort_values(["crop", "week"], key=lambda c: c.map({"Tomato": 0, "Onion": 1, "Potato": 2}) if c.name == "crop" else c) \
+        [["week", "crop", "Kerala markets", "All-India (arrival-weighted)"]].to_csv(CHARTS / "05_price_by_crop_long.csv", index=False)
+
     # 2. Premium: Kerala price / India price, monthly.
     m = con.execute("""
         WITH x AS (SELECT date_trunc('month', date)::DATE AS month, commodity, region, avg(price) p FROM series GROUP BY ALL)
@@ -37,7 +43,7 @@ def main():
     con.execute("""
         COPY (
             SELECT arg_max(market, date) AS market, arg_max(district, date) AS district,
-                   round(any_value(lat), 5) lat, round(any_value(lon), 5) lon, commodity,
+                   round(arg_max(lat, date), 5) lat, round(arg_max(lon, date), 5) lon, commodity,
                    round(median(price) / 100, 1) AS median_rs_per_kg, count(*) AS days_reported
             FROM market_day WHERE state = 'Kerala' AND lat IS NOT NULL AND date >= DATE '2025-06-01'
             GROUP BY market_key, commodity HAVING count(*) >= 30 ORDER BY commodity, market

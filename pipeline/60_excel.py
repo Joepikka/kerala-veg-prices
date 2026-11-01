@@ -202,8 +202,8 @@ def build(d):
     dash.column_dimensions["C"].width = dash.column_dimensions["D"].width = 12
 
     months = sorted({m.replace(day=1) for m in d["daily_price"].date})
-        # Chart data: monthly averages for the selected crop, kept to the right of the dashboard (columns T:V)
-    T = 20
+    # Chart data: monthly averages for the selected crop, kept to the right of the dashboard (columns X:Z)
+    T = 24  # column X
     dash.cell(row=1, column=T, value="Chart data: monthly average, selected crop").font = font(bold=True)
     for j, h in enumerate(["Month", "Kerala", "All-India"], start=T):
         dash.cell(row=2, column=j, value=h).font = font(bold=True)
@@ -211,7 +211,7 @@ def build(d):
         dash.cell(row=i, column=T, value=m).number_format = "mmm yy"
         for j, reg in ((T + 1, "Kerala"), (T + 2, "All-India")):
             dash.cell(row=i, column=j, value=(f'=AVERAGEIFS(Daily[rs_per_kg],Daily[commodity],$B$4,Daily[region],"{reg}",'
-                                              f'Daily[date],">="&$T{i},Daily[date],"<="&EOMONTH($T{i},0))')).number_format = "0.0"
+                                              f'Daily[date],">="&$X{i},Daily[date],"<="&EOMONTH($X{i},0))')).number_format = "0.0"
     last = 2 + len(months)
 
     line = LineChart()
@@ -221,7 +221,7 @@ def build(d):
     line.set_categories(Reference(dash, min_col=T, min_row=3, max_row=last))
     line.x_axis.number_format, line.x_axis.tickLblSkip = "mmm yy", 6
     line.x_axis.delete = line.y_axis.delete = False
-    line.legend.position = "r"
+    line.legend.position, line.legend.overlay = "b", False
     for s, color in zip(line.series, (ACCENT, "8A94A0")):
         s.graphicalProperties.line.solidFill, s.graphicalProperties.line.width, s.smooth = color, 22000, False
     dash.add_chart(line, "F3")

@@ -86,6 +86,9 @@ def main():
                 continue  # GDELT match not about this crop
             rows.append({"commodity": crop, "seen": a.get("seendate", "")[:8], "posted": rec["posted"],
                          "title": rec["title"] or a.get("title", ""), "type": label(body), "url": a["url"]})
+    if not rows:
+        print("no PIB releases found; interventions.csv not written")
+        return
     df = pd.DataFrame(rows).drop_duplicates(subset=["commodity", "url"])
     df["date"] = pd.to_datetime(df.posted, format="%d %b %Y", errors="coerce").fillna(pd.to_datetime(df.seen, format="%Y%m%d"))
     df = df.sort_values("date")
