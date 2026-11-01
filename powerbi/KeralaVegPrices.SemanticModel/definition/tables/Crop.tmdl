@@ -1,0 +1,13 @@
+table Crop
+	lineageTag: 3884abdb-b7cb-51db-bb1a-75d55e0690d3
+
+	column Crop
+		dataType: string
+		lineageTag: 5edf5f7a-3212-594b-b37d-67dbe8471d74
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Crop]
+
+	partition Crop = calculated
+		mode: import
+		source = DATATABLE("Crop", STRING, {{"Tomato"}, {"Onion"}, {"Potato"}})

@@ -1,0 +1,54 @@
+table Markets
+	lineageTag: 35e1a68f-0dcd-5865-9586-0003000ed54d
+
+	measure Latitude = AVERAGE(Markets[lat])
+		formatString: 0.00
+		lineageTag: b659537a-0857-58f1-9571-3982bbce04b1
+
+	column market_key
+		dataType: string
+		lineageTag: 090f8752-0cb7-59c3-9e77-132be786ee35
+		summarizeBy: none
+		sourceColumn: market_key
+
+	column market
+		dataType: string
+		lineageTag: 17605b5a-cd29-512f-af4d-6d48a66163c6
+		summarizeBy: none
+		sourceColumn: market
+
+	column district
+		dataType: string
+		lineageTag: bc9cb1a0-c96f-5388-b32d-2735437a418d
+		summarizeBy: none
+		sourceColumn: district
+
+	column lat
+		dataType: double
+		formatString: 0.00
+		lineageTag: 6a4ae4f4-ada1-50e9-b5c8-aa1eb6b6be0f
+		summarizeBy: none
+		sourceColumn: lat
+
+	column lon
+		dataType: double
+		formatString: 0.00
+		lineageTag: c1100c0e-d30d-54c3-88f2-88e1433f5214
+		summarizeBy: none
+		sourceColumn: lon
+
+	column band
+		dataType: string
+		lineageTag: 97666002-37e0-5b3f-a45c-89f0d5bdc320
+		summarizeBy: none
+		sourceColumn: band
+
+	partition Markets = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "markets.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"market_key", type text}, {"market", type text}, {"district", type text}, {"lat", type number}, {"lon", type number}, {"band", type text}}, "en-US")
+				in
+				    Typed

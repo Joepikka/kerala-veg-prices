@@ -1,0 +1,2 @@
+expression DataFolder = "D:\kerala-veg-prices\reports\bi\" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: e71422c9-6894-555d-9808-fd9145faaa51

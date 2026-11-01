@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "KeralaVegPrices"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5559536c-2449-5b04-bc19-fb1f7ce4a997"
+  }
+}

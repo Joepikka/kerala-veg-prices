@@ -1,0 +1,92 @@
+table 'Spike Events'
+	lineageTag: e290f105-4ff4-52e0-8400-d2b1ff716f9e
+
+	measure Spikes = COUNTROWS('Spike Events')
+		formatString: 0
+		lineageTag: 28602a61-fb17-5cee-bbd6-2646accc5da2
+
+	measure 'Hub Spiked First' = CALCULATE([Spikes], 'Spike Events'[hub_first] = TRUE())
+		formatString: 0
+		lineageTag: 5cff9ba0-7cdf-5bcd-9488-c34c25ead4f2
+
+	measure 'Median Hub Lead Days' = CALCULATE(MEDIAN('Spike Events'[hub_lead_days]), 'Spike Events'[hub_first] = TRUE())
+		formatString: 0.0
+		lineageTag: 1cdf3fe8-b182-5ac1-a0da-698ffc81de61
+
+	column event_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 99766e53-21c6-5942-9e62-7ccb9b7f9171
+		summarizeBy: none
+		sourceColumn: event_id
+
+	column commodity
+		dataType: string
+		lineageTag: 44279c96-a09c-5e7c-a332-97817cc7b9a4
+		summarizeBy: none
+		sourceColumn: commodity
+
+	column start
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 401d04dc-eb12-5c43-83b7-159d4af3b215
+		summarizeBy: none
+		sourceColumn: start
+
+	column peak
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 7f21473a-6b0c-5a01-831a-1e597062537a
+		summarizeBy: none
+		sourceColumn: peak
+
+	column price_start
+		dataType: double
+		formatString: 0.00
+		lineageTag: a02cd550-f8d4-535b-99b3-23774709da03
+		summarizeBy: none
+		sourceColumn: price_start
+
+	column price_peak
+		dataType: double
+		formatString: 0.00
+		lineageTag: d7740192-3ae8-50de-83f9-44b13280e30b
+		summarizeBy: none
+		sourceColumn: price_peak
+
+	column rise_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: f2c595a7-b569-57f4-8862-b952993918c6
+		summarizeBy: none
+		sourceColumn: rise_pct
+
+	column hub_start
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 7b154ac6-a7a0-5ede-bf9c-af75cef31d6e
+		summarizeBy: none
+		sourceColumn: hub_start
+
+	column hub_lead_days
+		dataType: double
+		formatString: 0
+		lineageTag: 9a3f8966-fbb7-572e-ac70-205baa38f941
+		summarizeBy: none
+		sourceColumn: hub_lead_days
+
+	column hub_first
+		dataType: boolean
+		lineageTag: c7540896-ea07-5c3b-a315-768675da2c67
+		summarizeBy: none
+		sourceColumn: hub_first
+
+	partition 'Spike Events' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "spike_events.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"event_id", Int64.Type}, {"commodity", type text}, {"start", type date}, {"peak", type date}, {"price_start", type number}, {"price_peak", type number}, {"rise_pct", type number}, {"hub_start", type date}, {"hub_lead_days", type number}, {"hub_first", type logical}}, "en-US")
+				in
+				    Typed

@@ -1,0 +1,28 @@
+table Date
+	dataCategory: Time
+	lineageTag: edd67a91-110a-5c3c-b7f7-e4294a3fd874
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: yyyy-mm-dd
+		lineageTag: d6c4cca2-7408-54ed-a553-4e596637cf36
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+	column Year = YEAR('Date'[Date])
+		dataType: int64
+		formatString: 0
+		lineageTag: 7dbe45fa-2d3a-57e3-b5d7-5c9e00f96b00
+		summarizeBy: none
+
+	column Month = DATE(YEAR('Date'[Date]), MONTH('Date'[Date]), 1)
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: 109a8d86-2121-5fb6-94a7-9db9dc836108
+		summarizeBy: none
+
+	partition Date = calculated
+		mode: import
+		source = CALENDAR(DATE(2020, 12, 1), DATE(2026, 5, 31))

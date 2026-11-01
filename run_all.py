@@ -12,7 +12,8 @@ from pathlib import Path
 
 PIPELINE = Path(__file__).resolve().parent / "pipeline"
 STEPS = ["01_ingest.py", "02_build.py", "03_tests.py", "21_transmission.py", "22_dispersion.py",
-         "23_spikes.py", "30_model.py", "50_export.py"]
+         "23_spikes.py", "30_model.py", "50_export.py",
+         "55_bi_export.py", "60_excel.py"]
 
 sys.path.insert(0, str(PIPELINE))
 for step in STEPS:

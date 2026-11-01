@@ -1,0 +1,145 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "events",
+  "position": {
+    "x": 24,
+    "y": 462,
+    "z": 9000,
+    "width": 600,
+    "height": 242,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "commodity"
+                }
+              },
+              "queryRef": "Spike Events.commodity",
+              "nativeQueryRef": "commodity",
+              "displayName": "Crop"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "start"
+                }
+              },
+              "queryRef": "Spike Events.start",
+              "nativeQueryRef": "start",
+              "displayName": "Kerala start"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "peak"
+                }
+              },
+              "queryRef": "Spike Events.peak",
+              "nativeQueryRef": "peak",
+              "displayName": "Peak"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "rise_pct"
+                }
+              },
+              "queryRef": "Spike Events.rise_pct",
+              "nativeQueryRef": "rise_pct",
+              "displayName": "Rise %"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "hub_lead_days"
+                }
+              },
+              "queryRef": "Spike Events.hub_lead_days",
+              "nativeQueryRef": "hub_lead_days",
+              "displayName": "Hub lead (days)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Spike Events"
+                  }
+                },
+                "Property": "start"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Spike events since 2021'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

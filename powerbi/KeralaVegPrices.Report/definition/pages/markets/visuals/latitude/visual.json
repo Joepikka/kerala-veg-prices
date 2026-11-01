@@ -1,0 +1,103 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "latitude",
+  "position": {
+    "x": 640,
+    "y": 100,
+    "z": 6000,
+    "width": 616,
+    "height": 260,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Markets"
+                    }
+                  },
+                  "Property": "market"
+                }
+              },
+              "queryRef": "Markets.market",
+              "nativeQueryRef": "market"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Markets"
+                    }
+                  },
+                  "Property": "Latitude"
+                }
+              },
+              "queryRef": "Markets.Latitude",
+              "nativeQueryRef": "Latitude"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Market Month"
+                    }
+                  },
+                  "Property": "Gap vs Kerala Median"
+                }
+              },
+              "queryRef": "Market Month.Gap vs Kerala Median",
+              "nativeQueryRef": "Gap vs Kerala Median"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gap vs latitude: the north is cheaper'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

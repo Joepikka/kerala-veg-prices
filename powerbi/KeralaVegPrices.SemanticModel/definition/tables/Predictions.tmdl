@@ -1,0 +1,72 @@
+table Predictions
+	lineageTag: abe298da-6c1a-5235-bf91-500b7ff42cd4
+
+	measure 'Warning Score' = MAX(Predictions[score])
+		formatString: 0.00
+		lineageTag: 8ca1d5fa-5ea7-5558-8fc1-1d7fb6d7b7eb
+
+	measure 'Alert Threshold' = IF(NOT ISBLANK([Warning Score]), CALCULATE(MAX('Model Scores'[threshold]), 'Model Scores'[selected] = TRUE()))
+		formatString: 0.00
+		lineageTag: 4f242aa8-f2b6-54c2-a88c-cdd86c5cb701
+
+	measure 'Alert Days' = CALCULATE(COUNTROWS(Predictions), Predictions[alert] = TRUE())
+		formatString: 0
+		lineageTag: 4c4c64cd-47f9-5cf3-8cf0-dc72ed81cbbf
+
+	measure Precision = DIVIDE(CALCULATE(COUNTROWS(Predictions), Predictions[alert] = TRUE(), Predictions[spike_ahead] = 1), [Alert Days])
+		formatString: 0%
+		lineageTag: d46ba31a-59e8-505d-ba42-8f8ca7ffe60c
+
+	measure Recall = DIVIDE(CALCULATE(COUNTROWS(Predictions), Predictions[alert] = TRUE(), Predictions[spike_ahead] = 1), CALCULATE(COUNTROWS(Predictions), Predictions[spike_ahead] = 1))
+		formatString: 0%
+		lineageTag: fb707825-0d85-50ec-97b6-df9d0ed17aef
+
+	column date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 3d3329a7-f94e-5ade-b341-0286895eac1d
+		summarizeBy: none
+		sourceColumn: date
+
+	column commodity
+		dataType: string
+		lineageTag: 2b32ee3a-b9a1-5efb-913b-34c2a5294253
+		summarizeBy: none
+		sourceColumn: commodity
+
+	column rs_per_kg
+		dataType: double
+		formatString: 0.00
+		lineageTag: a58dd644-3998-5cf2-a6a9-dad5ccafd8eb
+		summarizeBy: none
+		sourceColumn: rs_per_kg
+
+	column spike_ahead
+		dataType: int64
+		formatString: 0
+		lineageTag: 1fcb785f-e72a-5dff-b4a5-a58a2037c877
+		summarizeBy: none
+		sourceColumn: spike_ahead
+
+	column score
+		dataType: double
+		formatString: 0.00
+		lineageTag: 0fbd97ba-588b-52c7-bdcb-508aa690dff9
+		summarizeBy: none
+		sourceColumn: score
+
+	column alert
+		dataType: boolean
+		lineageTag: f47a8456-b1e8-5d9a-a091-d639818eba93
+		summarizeBy: none
+		sourceColumn: alert
+
+	partition Predictions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "test_predictions.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"date", type date}, {"commodity", type text}, {"rs_per_kg", type number}, {"spike_ahead", Int64.Type}, {"score", type number}, {"alert", type logical}}, "en-US")
+				in
+				    Typed

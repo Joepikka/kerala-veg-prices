@@ -1,0 +1,64 @@
+table 'Daily Price'
+	lineageTag: 4b6b7612-929a-5de4-87c3-360a23de143d
+
+	measure 'Kerala Price' = CALCULATE(MEDIAN('Daily Price'[rs_per_kg]), 'Daily Price'[region] = "Kerala")
+		formatString: 0.0
+		lineageTag: fc17a18b-39c6-553e-b4fe-0afef8867234
+
+	measure 'India Price' = CALCULATE(MEDIAN('Daily Price'[rs_per_kg]), 'Daily Price'[region] = "All-India")
+		formatString: 0.0
+		lineageTag: d0dcf0bc-113a-5d2b-96c9-3390bc02fd2c
+
+	measure 'Kerala Premium' = DIVIDE([Kerala Price], [India Price])
+		formatString: 0.0"x"
+		lineageTag: 6bd0c0fb-be65-5f11-b6a9-c56e744ae2fc
+
+	column date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 8a8dd573-2a66-54fc-9b60-cee30b353353
+		summarizeBy: none
+		sourceColumn: date
+
+	column commodity
+		dataType: string
+		lineageTag: 636c7255-01e0-59ed-90d0-cb09bca27239
+		summarizeBy: none
+		sourceColumn: commodity
+
+	column region
+		dataType: string
+		lineageTag: 2c6294a8-9a6d-5c6f-92e9-f8d1742cb0c9
+		summarizeBy: none
+		sourceColumn: region
+
+	column rs_per_kg
+		dataType: double
+		formatString: 0.00
+		lineageTag: 15f6e958-1802-5460-9da3-c822a0fbc4a2
+		summarizeBy: none
+		sourceColumn: rs_per_kg
+
+	column arrival_t
+		dataType: double
+		formatString: 0.00
+		lineageTag: 15d33746-876e-53f3-b1fe-ddc1b4c26f39
+		summarizeBy: none
+		sourceColumn: arrival_t
+
+	column n_markets
+		dataType: int64
+		formatString: 0
+		lineageTag: 9bb0713f-1817-594f-9bf5-3d67841045e9
+		summarizeBy: none
+		sourceColumn: n_markets
+
+	partition 'Daily Price' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "daily_price.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"date", type date}, {"commodity", type text}, {"region", type text}, {"rs_per_kg", type number}, {"arrival_t", type number}, {"n_markets", Int64.Type}}, "en-US")
+				in
+				    Typed

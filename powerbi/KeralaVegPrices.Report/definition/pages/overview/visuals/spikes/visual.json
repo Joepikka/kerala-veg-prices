@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "spikes",
+  "position": {
+    "x": 1022,
+    "y": 100,
+    "z": 7000,
+    "width": 234,
+    "height": 110,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "Spikes"
+                }
+              },
+              "queryRef": "Spike Events.Spikes",
+              "nativeQueryRef": "Spikes"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+relationship b89dbfad-2eeb-5065-ac94-52f865617ce4
+	fromColumn: 'Daily Price'.date
+	toColumn: Date.Date
+
+relationship 15356181-bbdb-5595-9dcf-64597ea1492a
+	fromColumn: 'Daily Price'.commodity
+	toColumn: Crop.Crop
+
+relationship 1f948682-b48e-51e9-8a99-c27c5bfb4fd0
+	fromColumn: 'Market Month'.month
+	toColumn: Date.Date
+
+relationship bba4ac9f-09ff-5714-8279-76ebd551dc46
+	fromColumn: 'Market Month'.commodity
+	toColumn: Crop.Crop
+
+relationship 8208575b-f9f4-5fa4-be90-27951dc5281a
+	fromColumn: 'Market Month'.market_key
+	toColumn: Markets.market_key
+
+relationship cc36e20c-b21f-5fbc-b282-26851198c3a4
+	fromColumn: 'Hub Week'.week
+	toColumn: Date.Date
+
+relationship da9b2129-ee6c-5a10-8847-67fb995045ad
+	fromColumn: 'Hub Week'.commodity
+	toColumn: Crop.Crop
+
+relationship 7433b64e-720a-59e1-b31e-c9315aa75138
+	fromColumn: 'Spike Events'.start
+	toColumn: Date.Date
+
+relationship d9f2f3d7-2f2d-51cf-b7aa-8905414be0ca
+	fromColumn: 'Spike Events'.commodity
+	toColumn: Crop.Crop
+
+relationship a6a72d04-f9b9-5c8f-923e-4cb269c1094c
+	fromColumn: Predictions.date
+	toColumn: Date.Date
+
+relationship 013e0afa-86fe-5f0c-ba67-f70053c04ada
+	fromColumn: Predictions.commodity
+	toColumn: Crop.Crop

@@ -1,0 +1,86 @@
+table 'Model Scores'
+	lineageTag: d99a3f60-d85e-5126-881f-c98cc7b34429
+
+	column approach
+		dataType: string
+		lineageTag: 26119506-598e-5c5c-932d-06ad511c5449
+		summarizeBy: none
+		sourceColumn: approach
+
+	column kind
+		dataType: string
+		lineageTag: 3d594516-75e5-54f2-b521-f64b19b8ff99
+		summarizeBy: none
+		sourceColumn: kind
+
+	column selected
+		dataType: boolean
+		lineageTag: af82f3fb-ab5b-5415-a636-177c64915fcf
+		summarizeBy: none
+		sourceColumn: selected
+
+	column threshold
+		dataType: double
+		formatString: 0.00
+		lineageTag: 21e24dda-8e9d-5b0f-9360-e06a06eb0266
+		summarizeBy: none
+		sourceColumn: threshold
+
+	column test_pr_auc
+		dataType: double
+		formatString: 0.00
+		lineageTag: d188dae9-674c-5c2d-95bc-6ed6ae0caa6a
+		summarizeBy: none
+		sourceColumn: test_pr_auc
+
+	column test_precision
+		dataType: double
+		formatString: 0.00
+		lineageTag: 8a7de5e8-6040-5e5f-9708-7a285be43c4c
+		summarizeBy: none
+		sourceColumn: test_precision
+
+	column test_recall
+		dataType: double
+		formatString: 0.00
+		lineageTag: 739fc197-2c0f-5ba3-aeec-258c6f49db0d
+		summarizeBy: none
+		sourceColumn: test_recall
+
+	column test_f1
+		dataType: double
+		formatString: 0.00
+		lineageTag: c4e4c481-0134-50ea-aa17-7e0865eed5bc
+		summarizeBy: none
+		sourceColumn: test_f1
+
+	column test_alerts
+		dataType: int64
+		formatString: 0
+		lineageTag: 1a27e008-cd6e-5d88-bd2f-50f905852f95
+		summarizeBy: none
+		sourceColumn: test_alerts
+
+	column test_base_rate
+		dataType: double
+		formatString: 0.00
+		lineageTag: 9b3cce1a-99d4-5316-8513-6499dfc1fcde
+		summarizeBy: none
+		sourceColumn: test_base_rate
+
+	column valid_pr_auc
+		dataType: double
+		formatString: 0.00
+		lineageTag: 89b8b866-af5e-5b81-bdfb-7de61f551f20
+		summarizeBy: none
+		sourceColumn: valid_pr_auc
+
+	partition 'Model Scores' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "model_scores.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"approach", type text}, {"kind", type text}, {"selected", type logical}, {"threshold", type number}, {"test_pr_auc", type number}, {"test_precision", type number}, {"test_recall", type number}, {"test_f1", type number}, {"test_alerts", Int64.Type}, {"test_base_rate", type number}, {"valid_pr_auc", type number}}, "en-US")
+				in
+				    Typed

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "premium",
+  "position": {
+    "x": 756,
+    "y": 100,
+    "z": 6000,
+    "width": 250,
+    "height": 110,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Daily Price"
+                    }
+                  },
+                  "Property": "Kerala Premium"
+                }
+              },
+              "queryRef": "Daily Price.Kerala Premium",
+              "nativeQueryRef": "Kerala Premium"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

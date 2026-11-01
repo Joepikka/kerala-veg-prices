@@ -1,0 +1,68 @@
+table 'Market Month'
+	lineageTag: c2b2c355-831e-50fa-a188-ba14bf7176f1
+
+	measure 'Market Price' = AVERAGE('Market Month'[rs_per_kg])
+		formatString: 0.0
+		lineageTag: 50254ce9-c630-573c-9149-b937e558157e
+
+	measure 'Kerala Market Median' = CALCULATE(MEDIANX(VALUES(Markets[market_key]), [Market Price]), ALL(Markets))
+		formatString: 0.0
+		lineageTag: 3b43821f-ef1b-551f-92c9-9d4d38381393
+
+	measure 'Gap vs Kerala Median' = IF(NOT ISBLANK([Market Price]), DIVIDE([Market Price], [Kerala Market Median]) - 1)
+		formatString: +0%;-0%;0%
+		lineageTag: 929641f1-04e8-5f62-8590-2d42cf006283
+
+	measure 'Average Gap' = AVERAGEX(VALUES(Markets[market_key]), [Gap vs Kerala Median])
+		formatString: +0%;-0%;0%
+		lineageTag: 8b0a8eb1-d433-5d86-9d42-0626158bb06d
+
+	column month
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 8be2bd0c-89bd-58dc-ad87-1b46f91388a2
+		summarizeBy: none
+		sourceColumn: month
+
+	column commodity
+		dataType: string
+		lineageTag: 75001e8d-43a2-579d-a620-c07378bc70a1
+		summarizeBy: none
+		sourceColumn: commodity
+
+	column market_key
+		dataType: string
+		lineageTag: 791073ce-aa83-597f-96f5-656dde1745b2
+		summarizeBy: none
+		sourceColumn: market_key
+
+	column rs_per_kg
+		dataType: double
+		formatString: 0.00
+		lineageTag: 98b84fc1-009d-56f4-b1ce-0c4fc0e6c1aa
+		summarizeBy: none
+		sourceColumn: rs_per_kg
+
+	column days_reported
+		dataType: int64
+		formatString: 0
+		lineageTag: dcaf1b28-1e04-5665-8dfc-25b17bce3fbd
+		summarizeBy: none
+		sourceColumn: days_reported
+
+	column arrival_t
+		dataType: double
+		formatString: 0.00
+		lineageTag: 146d9648-b622-571f-a692-892cab584c86
+		summarizeBy: none
+		sourceColumn: arrival_t
+
+	partition 'Market Month' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "market_month.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"month", type date}, {"commodity", type text}, {"market_key", type text}, {"rs_per_kg", type number}, {"days_reported", Int64.Type}, {"arrival_t", type number}}, "en-US")
+				in
+				    Typed

@@ -1,0 +1,103 @@
+market_key,market,district,lat,lon,band
+Kerala|adimali,Adimali,Idukki,10.01476,76.95614,Central
+Kerala|alappuzha,Alappuzha,Alappuzha,9.49807,76.33885,South (below 9.5°N)
+Kerala|aluva,Aluva,Ernakulam,10.1064,76.3512,Central
+Kerala|anchal,Anchal,Kollam,8.92927,76.9065,South (below 9.5°N)
+Kerala|anchalvfpck,Anchal VFPCK,Kollam,8.92251,76.90668,South (below 9.5°N)
+Kerala|angamaly,Angamaly,Ernakulam,10.19,76.39,Central
+Kerala|annamanadavfpck,Annamanada  VFPCK,Thrissur,10.24006,76.32031,Central
+Kerala|anyara(eec),Anyara(EEC),Thiruvananthapuram,8.51777,76.95694,South (below 9.5°N)
+Kerala|aralamoodu,Aralamoodu,Thiruvananthapuram,8.4855,76.94924,South (below 9.5°N)
+Kerala|aroor,Aroor,Alappuzha,9.88,76.3,Central
+Kerala|arwmmuvattupuzha,Arwm Muvattupuzha,Ernakulam,9.986,76.581,Central
+Kerala|athirampuzha,Athirampuzha,Kottayam,9.6595,76.5267,Central
+Kerala|attingal,Attingal,Thiruvananthapuram,8.6986,76.81344,South (below 9.5°N)
+Kerala|balarampuram,Balarampuram,Thiruvananthapuram,8.4248,77.04578,South (below 9.5°N)
+Kerala|broadway,Broadway,Ernakulam,9.98,76.28,Central
+Kerala|chala,Chala,Thiruvananthapuram,8.4761,76.94595,South (below 9.5°N)
+Kerala|chalakudy,Chalakudy,Thrissur,10.3119,76.332,Central
+Kerala|chathanoor,Chathanoor,Kollam,8.86,76.72,South (below 9.5°N)
+Kerala|chavakkad,Chavakkad,Thrissur,10.5333,76.05,Central
+Kerala|chelakkara,Chelakkara,Thrissur,10.692,76.343,Central
+Kerala|chengannur,Chengannur,Alappuzha,9.32,76.61,South (below 9.5°N)
+Kerala|cherthala,Cherthala,Alappuzha,9.67,76.34,Central
+Kerala|ettumanoorvfpck,ETTUMANOOR VFPCK,Kottayam,9.67157,76.55873,Central
+Kerala|ernakulam,Ernakulam,Ernakulam,9.98,76.28,Central
+Kerala|ettumanoor,Ettumanoor,Kottayam,9.6738,76.5567,Central
+Kerala|harippad,Harippad,Alappuzha,9.3,76.44,South (below 9.5°N)
+Kerala|irinjalakkuda,Irinjalakkuda,Thrissur,10.3424,76.2112,Central
+Kerala|kallachi,Kallachi,Kozhikode,11.6863,75.6775,North (above 11°N)
+Kerala|kanjangadu,Kanjangadu,Kasaragod,12.3094,75.0961,North (above 11°N)
+Kerala|kanjirappally,Kanjirappally,Kottayam,9.5838,76.7827,Central
+Kerala|kannamangalamvfpck,Kannamangalam  VFPCK,Malappuram,11.09091,75.98116,North (above 11°N)
+Kerala|kannur,Kannur,Kannur,11.8745,75.3704,North (above 11°N)
+Kerala|kattappana,Kattappana,Idukki,9.75429,77.11576,Central
+Kerala|kayamkulam,Kayamkulam,Alappuzha,9.17,76.5,South (below 9.5°N)
+Kerala|kodungalloor,Kodungalloor,Thrissur,10.22,76.22,Central
+Kerala|koduvayoor,Koduvayoor,Palakkad,10.66,76.65,Central
+Kerala|kollam,Kollam,Kollam,8.88705,76.59067,South (below 9.5°N)
+Kerala|kollengode,Kollengode,Palakkad,10.61,76.69,Central
+Kerala|kondotty,Kondotty,Malappuram,11.1526,75.9567,North (above 11°N)
+Kerala|kothamangalam,Kothamangalam,Ernakulam,10.0667,76.6333,Central
+Kerala|kottakkal,Kottakkal,Malappuram,11.00011,75.99883,North (above 11°N)
+Kerala|kottarakkara,Kottarakkara,Kollam,9.006,76.772,South (below 9.5°N)
+Kerala|kottayam,Kottayam,Kottayam,9.6,76.5667,Central
+Kerala|kunnamangalamvfpck,Kunnamangalam  VFPCK,Kozhikode,11.30493,75.87705,North (above 11°N)
+Kerala|kuruppanthura,Kuruppanthura,Kottayam,9.74,76.52,Central
+Kerala|kuthuparambu,Kuthuparambu,Kannur,11.83,75.56551,North (above 11°N)
+Kerala|madhavapuram,Madhavapuram,Alappuzha,9.498,76.3388,South (below 9.5°N)
+Kerala|madikaivfpck,Madikai  Vfpck,Kasaragod,12.194,75.9,North (above 11°N)
+Kerala|malampuzhavfpck,Malampuzha VFPCK,Palakkad,10.7732,76.66178,Central
+Kerala|mananthavady,Mananthavady,Wayanad,11.8068,76.0095,North (above 11°N)
+Kerala|manathavady,Manathavady,Wayanad,11.80294,76.00386,North (above 11°N)
+Kerala|manjeri,Manjeri,Malappuram,11.1202,76.12,North (above 11°N)
+Kerala|manjeswaram,Manjeswaram,Kasaragod,12.7066,74.9018,North (above 11°N)
+Kerala|mannar,Mannar,Alappuzha,9.317,76.534,South (below 9.5°N)
+Kerala|moochamkunduvfpck,Moochamkundu Vfpck,Palakkad,10.58,76.76,Central
+Kerala|moovattupuzha,Moovattupuzha,Ernakulam,9.98942,76.57897,Central
+Kerala|mukkom,Mukkom,Kozhikode,11.31838,75.99857,North (above 11°N)
+Kerala|munnar,Munnar,Idukki,10.089,77.06,Central
+Kerala|nedumangadu,Nedumangadu,Thiruvananthapuram,8.60802,77.00463,South (below 9.5°N)
+Kerala|nedumkandam,Nedumkandam,Idukki,9.84,77.16,Central
+Kerala|neduvathoorvfpck,Neduvathoor  VFPCK,Kollam,8.99223,76.74766,South (below 9.5°N)
+Kerala|neeleswaram,Neeleswaram,Kasaragod,12.2595,75.1352,North (above 11°N)
+Kerala|neyyatinkara,Neyyatinkara,Thiruvananthapuram,8.39949,77.0872,South (below 9.5°N)
+Kerala|neyyattinkaravfpck,Neyyattinkara  VFPCK,Thiruvananthapuram,8.43158,77.0757,South (below 9.5°N)
+Kerala|northparavur,North Paravur,Ernakulam,10.14,76.23,Central
+Kerala|pala,Pala,Kottayam,9.7138,76.6829,Central
+Kerala|palakkad,Palakkad,Palakkad,10.7847,76.6531,Central
+Kerala|palayam,Palayam,Kozhikode,11.25278,75.78552,North (above 11°N)
+Kerala|pampady,Pampady,Kottayam,9.5656,76.6441,Central
+Kerala|parappanangadi,Parappanangadi,Malappuram,11.06051,75.85078,North (above 11°N)
+Kerala|parappanangadivfpck,Parappanangadi VFPCK,Malappuram,11.05397,75.85552,North (above 11°N)
+Kerala|parassala,Parassala,Thiruvananthapuram,8.3787,77.15,South (below 9.5°N)
+Kerala|pattambi,Pattambi,Palakkad,10.81,76.02,Central
+Kerala|perambra,Perambra,Kozhikode,11.5575,75.7605,North (above 11°N)
+Kerala|perinthalmanna,Perinthalmanna,Malappuram,10.9755,76.2305,Central
+Kerala|perumattyvfpck,Perumatty Vfpck,Palakkad,10.72,76.734,Central
+Kerala|perumbavoor,Perumbavoor,Ernakulam,10.11,76.48,Central
+Kerala|piravam,Piravam,Ernakulam,9.87,76.49,Central
+Kerala|pothencode,Pothencode,Thiruvananthapuram,8.61842,76.89769,South (below 9.5°N)
+Kerala|punalur,Punalur,Kollam,9.017,76.926,South (below 9.5°N)
+Kerala|puthupariyaramvfpck,Puthupariyaram  VFPCK,Palakkad,10.7732,76.66178,Central
+Kerala|quilandy,Quilandy,Kozhikode,11.45,75.69,North (above 11°N)
+Kerala|rajakkadvfpck,Rajakkad  VFPCK,Idukki,9.96811,77.09637,Central
+Kerala|sasthamkotta,Sasthamkotta,Kollam,9.03146,76.60098,South (below 9.5°N)
+Kerala|sulthanbatheryvfpck,Sulthanbathery  VFPCK,Wayanad,11.66291,76.25702,North (above 11°N)
+Kerala|taliparamba,Taliparamba,Kannur,12.229,75.2133,North (above 11°N)
+Kerala|thalasserry,Thalasserry,Kannur,11.75001,75.49507,North (above 11°N)
+Kerala|thalayolaparambu,Thalayolaparambu,Kottayam,9.7862,76.4485,Central
+Kerala|thamarassery,Thamarassery,Kozhikode,11.4083,75.9203,North (above 11°N)
+Kerala|thirurrangadi,Thirurrangadi,Malappuram,11.05,75.93,North (above 11°N)
+Kerala|thodupuzha,Thodupuzha,Idukki,9.8967,76.7136,Central
+Kerala|thrippunithura,Thrippunithura,Ernakulam,9.95,76.35,Central
+Kerala|thrissur,Thrissur,Thrissur,10.52,76.21,Central
+Kerala|veloorkkaravfpck,VELOORKKARA VFPCK,Thrissur,10.32594,76.21786,Central
+Kerala|vadakarapathy,Vadakarapathy,Palakkad,10.798,76.8358,Central
+Kerala|vadakarapathyvfpck,Vadakarapathy Vfpck,Palakkad,10.798,76.8358,Central
+Kerala|vadakkenchery,Vadakkenchery,Palakkad,10.58937,76.47992,Central
+Kerala|vallikunnamvfpck,Vallikunnam  VFPCK,Alappuzha,9.14201,76.56016,South (below 9.5°N)
+Kerala|vamanapuram,Vamanapuram,Thiruvananthapuram,8.72188,76.898,South (below 9.5°N)
+Kerala|vandiperiyar,Vandiperiyar,Idukki,9.5703,77.0897,Central
+Kerala|vengeri(kozhikode),Vengeri(Kozhikode),Kozhikode,11.2858,75.8055,North (above 11°N)
+Kerala|wadakkanchery,Wadakkanchery,Thrissur,10.6594,76.2494,Central

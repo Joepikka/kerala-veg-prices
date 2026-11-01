@@ -1,0 +1,145 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "models",
+  "position": {
+    "x": 640,
+    "y": 462,
+    "z": 10000,
+    "width": 616,
+    "height": 242,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Model Scores"
+                    }
+                  },
+                  "Property": "approach"
+                }
+              },
+              "queryRef": "Model Scores.approach",
+              "nativeQueryRef": "approach",
+              "displayName": "Approach"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Model Scores"
+                    }
+                  },
+                  "Property": "kind"
+                }
+              },
+              "queryRef": "Model Scores.kind",
+              "nativeQueryRef": "kind",
+              "displayName": "Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Model Scores"
+                    }
+                  },
+                  "Property": "test_pr_auc"
+                }
+              },
+              "queryRef": "Model Scores.test_pr_auc",
+              "nativeQueryRef": "test_pr_auc",
+              "displayName": "PR-AUC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Model Scores"
+                    }
+                  },
+                  "Property": "test_precision"
+                }
+              },
+              "queryRef": "Model Scores.test_precision",
+              "nativeQueryRef": "test_precision",
+              "displayName": "Precision"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Model Scores"
+                    }
+                  },
+                  "Property": "test_recall"
+                }
+              },
+              "queryRef": "Model Scores.test_recall",
+              "nativeQueryRef": "test_recall",
+              "displayName": "Recall"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Model Scores"
+                  }
+                },
+                "Property": "test_pr_auc"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Approaches compared on the test period (chance PR-AUC = 0.04)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "lead",
+  "position": {
+    "x": 644,
+    "y": 100,
+    "z": 5000,
+    "width": 200,
+    "height": 110,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "card",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spike Events"
+                    }
+                  },
+                  "Property": "Median Hub Lead Days"
+                }
+              },
+              "queryRef": "Spike Events.Median Hub Lead Days",
+              "nativeQueryRef": "Median Hub Lead Days"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

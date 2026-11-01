@@ -1,0 +1,20 @@
+{
+  "name": "Kerala Almanac",
+  "dataColors": [
+    "#8F1B5C",
+    "#8A94A0",
+    "#2C3A4A",
+    "#C2669B",
+    "#B8BFC7",
+    "#5B6470"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1B1F24",
+  "tableAccent": "#8F1B5C",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1B1F24"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+table 'Hub Week'
+	lineageTag: d09410d7-b4a8-5268-89e8-0359cd99d450
+
+	measure 'Kerala Weekly' = AVERAGE('Hub Week'[kerala_rs_per_kg])
+		formatString: 0.0
+		lineageTag: 76baa3d8-293b-594a-b912-b933adcd062e
+
+	measure 'Hub Weekly' = AVERAGE('Hub Week'[hub_rs_per_kg])
+		formatString: 0.0
+		lineageTag: 72b5080c-ec12-56e5-8cee-e5a36f161b91
+
+	column week
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: d38b3524-108e-5cc8-8bbb-ec1d63542a05
+		summarizeBy: none
+		sourceColumn: week
+
+	column kerala_rs_per_kg
+		dataType: double
+		formatString: 0.00
+		lineageTag: a4b46106-ef70-521f-bb5f-6d74adcacdf5
+		summarizeBy: none
+		sourceColumn: kerala_rs_per_kg
+
+	column hub_rs_per_kg
+		dataType: double
+		formatString: 0.00
+		lineageTag: 41646ea8-c10f-55a9-b386-b89e98afe0fc
+		summarizeBy: none
+		sourceColumn: hub_rs_per_kg
+
+	column hub_arrivals
+		dataType: double
+		formatString: 0.00
+		lineageTag: 3f15657b-a2b6-51bb-a953-f7e6d584f81b
+		summarizeBy: none
+		sourceColumn: hub_arrivals
+
+	column commodity
+		dataType: string
+		lineageTag: 490c34db-3081-5f36-a27d-e4e37c9d96a7
+		summarizeBy: none
+		sourceColumn: commodity
+
+	partition 'Hub Week' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "hub_week.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"week", type date}, {"kerala_rs_per_kg", type number}, {"hub_rs_per_kg", type number}, {"hub_arrivals", type number}, {"commodity", type text}}, "en-US")
+				in
+				    Typed

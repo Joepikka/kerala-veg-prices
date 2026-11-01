@@ -1,0 +1,145 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "marketTable",
+  "position": {
+    "x": 224,
+    "y": 376,
+    "z": 7000,
+    "width": 1032,
+    "height": 328,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Markets"
+                    }
+                  },
+                  "Property": "market"
+                }
+              },
+              "queryRef": "Markets.market",
+              "nativeQueryRef": "market",
+              "displayName": "Market"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Markets"
+                    }
+                  },
+                  "Property": "district"
+                }
+              },
+              "queryRef": "Markets.district",
+              "nativeQueryRef": "district",
+              "displayName": "District"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Markets"
+                    }
+                  },
+                  "Property": "band"
+                }
+              },
+              "queryRef": "Markets.band",
+              "nativeQueryRef": "band",
+              "displayName": "Region band"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Market Month"
+                    }
+                  },
+                  "Property": "Market Price"
+                }
+              },
+              "queryRef": "Market Month.Market Price",
+              "nativeQueryRef": "Market Price",
+              "displayName": "Price, Rs/kg"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Market Month"
+                    }
+                  },
+                  "Property": "Gap vs Kerala Median"
+                }
+              },
+              "queryRef": "Market Month.Gap vs Kerala Median",
+              "nativeQueryRef": "Gap vs Kerala Median",
+              "displayName": "Gap vs Kerala median"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Market Month"
+                  }
+                },
+                "Property": "Gap vs Kerala Median"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Markets'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
