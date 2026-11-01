@@ -1,0 +1,282 @@
+[
+ {
+  "commodity": "Tomato",
+  "start": "2021-02-03",
+  "peak": "2021-02-18",
+  "price_start": 2013.0,
+  "price_peak": 2743.0,
+  "rise_pct": 36.3,
+  "hub_start": "2021-01-18",
+  "hub_lead_days": 16
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2021-08-06",
+  "peak": "2021-08-21",
+  "price_start": 1566.0,
+  "price_peak": 2190.0,
+  "rise_pct": 39.8,
+  "hub_start": "2021-07-08",
+  "hub_lead_days": 29
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2021-09-17",
+  "peak": "2021-10-20",
+  "price_start": 1688.0,
+  "price_peak": 4204.0,
+  "rise_pct": 149.1,
+  "hub_start": "2021-09-04",
+  "hub_lead_days": 13
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2021-11-01",
+  "peak": "2021-11-24",
+  "price_start": 3825.0,
+  "price_peak": 6727.0,
+  "rise_pct": 75.9,
+  "hub_start": "2021-10-05",
+  "hub_lead_days": 27
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2022-03-19",
+  "peak": "2022-05-29",
+  "price_start": 1235.0,
+  "price_peak": 7239.0,
+  "rise_pct": 486.1,
+  "hub_start": "2022-03-18",
+  "hub_lead_days": 1
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2022-08-22",
+  "peak": "2022-09-20",
+  "price_start": 1642.0,
+  "price_peak": 3446.0,
+  "rise_pct": 109.9,
+  "hub_start": "2022-07-30",
+  "hub_lead_days": 23
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2022-12-02",
+  "peak": "2022-12-20",
+  "price_start": 1516.0,
+  "price_peak": 2297.0,
+  "rise_pct": 51.5,
+  "hub_start": "2022-11-16",
+  "hub_lead_days": 16
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2023-01-04",
+  "peak": "2023-01-22",
+  "price_start": 1899.0,
+  "price_peak": 3190.0,
+  "rise_pct": 68.0,
+  "hub_start": "2022-12-31",
+  "hub_lead_days": 4
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2023-05-04",
+  "peak": "2023-05-21",
+  "price_start": 1648.0,
+  "price_peak": 2296.0,
+  "rise_pct": 39.3,
+  "hub_start": "2023-04-06",
+  "hub_lead_days": 28
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2023-05-24",
+  "peak": "2023-07-17",
+  "price_start": 2132.0,
+  "price_peak": 10142.0,
+  "rise_pct": 375.7,
+  "hub_start": "2023-04-30",
+  "hub_lead_days": 24
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2023-10-26",
+  "peak": "2023-11-25",
+  "price_start": 1823.0,
+  "price_peak": 3496.0,
+  "rise_pct": 91.7,
+  "hub_start": "2023-10-09",
+  "hub_lead_days": 17
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2024-04-02",
+  "peak": "2024-04-13",
+  "price_start": 2382.0,
+  "price_peak": 3320.0,
+  "rise_pct": 39.4,
+  "hub_start": null,
+  "hub_lead_days": null
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2024-05-13",
+  "peak": "2024-05-30",
+  "price_start": 2926.0,
+  "price_peak": 4354.0,
+  "rise_pct": 48.8,
+  "hub_start": "2024-05-10",
+  "hub_lead_days": 3
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2024-06-04",
+  "peak": "2024-06-23",
+  "price_start": 4281.0,
+  "price_peak": 6883.0,
+  "rise_pct": 60.8,
+  "hub_start": "2024-05-10",
+  "hub_lead_days": 25
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2024-08-31",
+  "peak": "2024-10-07",
+  "price_start": 2015.0,
+  "price_peak": 5173.0,
+  "rise_pct": 156.8,
+  "hub_start": "2024-09-01",
+  "hub_lead_days": -1
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2024-11-16",
+  "peak": "2024-12-07",
+  "price_start": 2493.0,
+  "price_peak": 4456.0,
+  "rise_pct": 78.7,
+  "hub_start": "2024-11-19",
+  "hub_lead_days": -3
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2025-05-26",
+  "peak": "2025-06-13",
+  "price_start": 2093.0,
+  "price_peak": 2982.0,
+  "rise_pct": 42.5,
+  "hub_start": "2025-05-22",
+  "hub_lead_days": 4
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2025-07-18",
+  "peak": "2025-08-03",
+  "price_start": 2751.0,
+  "price_peak": 4171.0,
+  "rise_pct": 51.6,
+  "hub_start": "2025-06-20",
+  "hub_lead_days": 28
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2025-10-30",
+  "peak": "2025-11-29",
+  "price_start": 2329.0,
+  "price_peak": 5486.0,
+  "rise_pct": 135.5,
+  "hub_start": "2025-10-29",
+  "hub_lead_days": 1
+ },
+ {
+  "commodity": "Tomato",
+  "start": "2026-04-22",
+  "peak": "2026-05-06",
+  "price_start": 3640.0,
+  "price_peak": 4850.0,
+  "rise_pct": 33.2,
+  "hub_start": "2026-03-23",
+  "hub_lead_days": 30
+ },
+ {
+  "commodity": "Onion",
+  "start": "2021-09-23",
+  "peak": "2021-10-21",
+  "price_start": 2394.0,
+  "price_peak": 3959.0,
+  "rise_pct": 65.4,
+  "hub_start": "2021-09-17",
+  "hub_lead_days": 6
+ },
+ {
+  "commodity": "Onion",
+  "start": "2022-09-30",
+  "peak": "2022-10-23",
+  "price_start": 1924.0,
+  "price_peak": 2812.0,
+  "rise_pct": 46.1,
+  "hub_start": null,
+  "hub_lead_days": null
+ },
+ {
+  "commodity": "Onion",
+  "start": "2022-10-28",
+  "peak": "2022-11-11",
+  "price_start": 2613.0,
+  "price_peak": 3576.0,
+  "rise_pct": 36.8,
+  "hub_start": null,
+  "hub_lead_days": null
+ },
+ {
+  "commodity": "Onion",
+  "start": "2023-08-12",
+  "peak": "2023-08-29",
+  "price_start": 2404.0,
+  "price_peak": 3243.0,
+  "rise_pct": 34.9,
+  "hub_start": "2023-07-31",
+  "hub_lead_days": 12
+ },
+ {
+  "commodity": "Onion",
+  "start": "2023-10-13",
+  "peak": "2023-11-05",
+  "price_start": 3268.0,
+  "price_peak": 5821.0,
+  "rise_pct": 78.1,
+  "hub_start": "2023-10-06",
+  "hub_lead_days": 7
+ },
+ {
+  "commodity": "Onion",
+  "start": "2024-05-29",
+  "peak": "2024-06-17",
+  "price_start": 2831.0,
+  "price_peak": 3752.0,
+  "rise_pct": 32.5,
+  "hub_start": "2024-05-18",
+  "hub_lead_days": 11
+ },
+ {
+  "commodity": "Onion",
+  "start": "2025-10-16",
+  "peak": "2025-11-09",
+  "price_start": 2235.0,
+  "price_peak": 3676.0,
+  "rise_pct": 64.5,
+  "hub_start": "2025-10-09",
+  "hub_lead_days": 7
+ },
+ {
+  "commodity": "Potato",
+  "start": "2021-10-28",
+  "peak": "2021-11-13",
+  "price_start": 2487.0,
+  "price_peak": 3417.0,
+  "rise_pct": 37.4,
+  "hub_start": null,
+  "hub_lead_days": null
+ }
+]

@@ -1,0 +1,208 @@
+market,district,lat,lon,commodity,vs_kerala_median,median_rs_per_kg,pct_vs_median,days_reported
+Aluva,Ernakulam,10.1064,76.3512,Onion,10%+ cheaper than the Kerala median,23.0,-14.0,265
+Anchal,Kollam,8.93002,76.90647,Onion,10%+ dearer than the Kerala median,36.0,35.0,302
+Angamaly,Ernakulam,10.19,76.39,Onion,10%+ dearer than the Kerala median,30.0,12.0,251
+Aralamoodu,Thiruvananthapuram,8.52414,76.93664,Onion,10%+ dearer than the Kerala median,35.0,31.0,275
+Aroor,Alappuzha,9.87819,76.30387,Onion,10%+ dearer than the Kerala median,33.0,24.0,215
+Athirampuzha,Kottayam,9.6595,76.5267,Onion,Within 10% of the median,26.1,-2.0,228
+Balarampuram,Thiruvananthapuram,8.4248,77.04578,Onion,10%+ dearer than the Kerala median,30.0,12.0,254
+Broadway,Ernakulam,9.97984,76.27768,Onion,Within 10% of the median,26.0,-3.0,193
+Chala,Thiruvananthapuram,8.4761,76.94595,Onion,Within 10% of the median,27.7,4.0,185
+Chalakudy,Thrissur,10.30701,76.33406,Onion,10%+ dearer than the Kerala median,30.0,12.0,130
+Chathanoor,Kollam,8.86,76.72,Onion,10%+ dearer than the Kerala median,30.0,12.0,193
+Chavakkad,Thrissur,10.5333,76.05,Onion,10%+ dearer than the Kerala median,30.0,12.0,247
+Chelakkara,Thrissur,10.692,76.343,Onion,Within 10% of the median,29.0,9.0,303
+Chengannur,Alappuzha,9.31833,76.61108,Onion,Within 10% of the median,26.7,0.0,264
+Cherthala,Alappuzha,9.67,76.34,Onion,10%+ dearer than the Kerala median,31.0,16.0,197
+Ettumanoor,Kottayam,9.6738,76.5567,Onion,10%+ cheaper than the Kerala median,23.0,-14.0,235
+Harippad,Alappuzha,9.27986,76.45922,Onion,Within 10% of the median,27.0,1.0,271
+Irinjalakkuda,Thrissur,10.34689,76.20741,Onion,Within 10% of the median,26.0,-3.0,106
+Kallachi,Kozhikode,11.6863,75.6775,Onion,10%+ cheaper than the Kerala median,21.0,-21.0,270
+Kanjangadu,Kasaragod,12.3094,75.0961,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,285
+Kanjirappally,Kottayam,9.5838,76.7827,Onion,Within 10% of the median,28.0,5.0,273
+Kannur,Kannur,11.87448,75.37037,Onion,10%+ cheaper than the Kerala median,23.0,-14.0,330
+Kattappana,Idukki,9.75429,77.11576,Onion,10%+ dearer than the Kerala median,30.1,13.0,148
+Kayamkulam,Alappuzha,9.17484,76.50134,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,338
+Kodungalloor,Thrissur,10.2277,76.19712,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,49
+Koduvayoor,Palakkad,10.66323,76.64705,Onion,10%+ dearer than the Kerala median,30.5,14.0,345
+Kollengode,Palakkad,10.61,76.69,Onion,Within 10% of the median,28.0,5.0,260
+Kondotty,Malappuram,11.1526,75.9567,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,189
+Kothamangalam,Ernakulam,10.06026,76.63518,Onion,Within 10% of the median,25.0,-6.0,254
+Kottakkal,Malappuram,11.00011,75.99883,Onion,10%+ cheaper than the Kerala median,22.0,-18.0,232
+Kottarakkara,Kollam,9.00556,76.78315,Onion,10%+ dearer than the Kerala median,45.0,69.0,249
+Kottayam,Kottayam,9.6,76.5667,Onion,10%+ dearer than the Kerala median,30.0,12.0,226
+Kuruppanthura,Kottayam,9.74,76.52,Onion,10%+ dearer than the Kerala median,30.0,12.0,185
+Madhavapuram,Alappuzha,9.75683,76.30813,Onion,10%+ dearer than the Kerala median,38.0,42.0,209
+Manjeri,Malappuram,11.1202,76.12,Onion,10%+ cheaper than the Kerala median,19.5,-27.0,218
+Mannar,Alappuzha,9.31714,76.53437,Onion,10%+ dearer than the Kerala median,33.2,24.0,63
+Mukkom,Kozhikode,11.31838,75.99857,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,280
+Munnar,Idukki,10.08893,77.05952,Onion,10%+ dearer than the Kerala median,46.2,73.0,61
+Nedumkandam,Idukki,9.83626,77.15714,Onion,Within 10% of the median,25.0,-6.0,74
+Neeleswaram,Kasaragod,12.25961,75.12811,Onion,Within 10% of the median,28.0,5.0,245
+North Paravur,Ernakulam,10.14,76.23,Onion,10%+ dearer than the Kerala median,50.0,87.0,242
+Pala,Kottayam,9.7138,76.6829,Onion,10%+ dearer than the Kerala median,32.0,20.0,260
+Palakkad,Palakkad,10.7847,76.6531,Onion,10%+ dearer than the Kerala median,32.0,20.0,282
+Palayam,Kozhikode,11.25278,75.78552,Onion,10%+ cheaper than the Kerala median,19.0,-29.0,185
+Pampady,Kottayam,9.56566,76.64416,Onion,10%+ dearer than the Kerala median,30.0,12.0,179
+Parappanangadi,Malappuram,11.06051,75.85078,Onion,10%+ cheaper than the Kerala median,22.0,-18.0,301
+Pattambi,Palakkad,10.81,76.02,Onion,Within 10% of the median,27.4,3.0,298
+Perambra,Kozhikode,11.5575,75.7605,Onion,10%+ cheaper than the Kerala median,22.0,-18.0,233
+Perinthalmanna,Malappuram,10.9755,76.2305,Onion,10%+ cheaper than the Kerala median,21.0,-21.0,208
+Perumbavoor,Ernakulam,10.11,76.48,Onion,Within 10% of the median,25.0,-6.0,276
+Piravam,Ernakulam,9.87307,76.49195,Onion,10%+ dearer than the Kerala median,30.0,12.0,205
+Pothencode,Thiruvananthapuram,8.61842,76.89769,Onion,10%+ dearer than the Kerala median,35.0,31.0,159
+Punalur,Kollam,9.017,76.926,Onion,10%+ cheaper than the Kerala median,20.0,-25.0,115
+Quilandy,Kozhikode,11.44287,75.69764,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,93
+Taliparamba,Kannur,12.03514,75.36109,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,328
+Thalasserry,Kannur,11.75001,75.49507,Onion,10%+ cheaper than the Kerala median,22.0,-18.0,345
+Thalayolaparambu,Kottayam,9.7862,76.4485,Onion,Within 10% of the median,25.5,-4.0,265
+Thamarassery,Kozhikode,11.4083,75.9203,Onion,10%+ cheaper than the Kerala median,23.0,-14.0,130
+Thirurrangadi,Malappuram,11.05,75.93,Onion,10%+ cheaper than the Kerala median,22.0,-18.0,177
+Thodupuzha,Idukki,9.89593,76.71841,Onion,Within 10% of the median,25.0,-6.0,107
+Thrippunithura,Ernakulam,9.95,76.35,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,270
+Thrissur,Thrissur,10.52,76.21,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,194
+Vadakarapathy,Palakkad,10.78245,76.8548,Onion,10%+ cheaper than the Kerala median,24.0,-10.0,207
+Vadakkenchery,Palakkad,10.60079,76.4904,Onion,10%+ dearer than the Kerala median,35.0,31.0,285
+Vamanapuram,Thiruvananthapuram,8.72003,76.89804,Onion,Within 10% of the median,25.0,-6.0,253
+Vandiperiyar,Idukki,9.57211,77.0896,Onion,10%+ dearer than the Kerala median,32.0,20.0,272
+Wadakkanchery,Thrissur,10.66438,76.24927,Onion,Within 10% of the median,28.0,5.0,218
+Aluva,Ernakulam,10.1064,76.3512,Potato,Within 10% of the median,34.0,6.0,265
+Anchal,Kollam,8.92927,76.9065,Potato,10%+ dearer than the Kerala median,38.0,19.0,303
+Angamaly,Ernakulam,10.19264,76.38693,Potato,Within 10% of the median,35.0,9.0,255
+Aralamoodu,Thiruvananthapuram,8.52414,76.93664,Potato,10%+ dearer than the Kerala median,40.0,25.0,272
+Aroor,Alappuzha,9.88,76.3,Potato,10%+ dearer than the Kerala median,37.0,16.0,203
+Athirampuzha,Kottayam,9.6679,76.53295,Potato,Within 10% of the median,31.0,-3.0,215
+Balarampuram,Thiruvananthapuram,8.43206,77.05028,Potato,10%+ dearer than the Kerala median,40.0,25.0,254
+Broadway,Ernakulam,9.98,76.28,Potato,10%+ dearer than the Kerala median,41.0,28.0,190
+Chala,Thiruvananthapuram,8.48398,76.95134,Potato,Within 10% of the median,30.0,-6.0,187
+Chalakudy,Thrissur,10.30701,76.33406,Potato,10%+ dearer than the Kerala median,40.0,25.0,105
+Chathanoor,Kollam,8.86,76.72,Potato,10%+ dearer than the Kerala median,40.0,25.0,181
+Chavakkad,Thrissur,10.5333,76.05,Potato,10%+ dearer than the Kerala median,40.0,25.0,207
+Chelakkara,Thrissur,10.69414,76.34636,Potato,10%+ dearer than the Kerala median,36.0,12.0,298
+Chengannur,Alappuzha,9.31833,76.61108,Potato,Within 10% of the median,30.0,-6.0,231
+Cherthala,Alappuzha,9.67,76.34,Potato,10%+ dearer than the Kerala median,36.0,12.0,189
+Ettumanoor,Kottayam,9.67063,76.55788,Potato,Within 10% of the median,30.0,-6.0,210
+Irinjalakkuda,Thrissur,10.3424,76.2112,Potato,Within 10% of the median,30.0,-6.0,47
+Kallachi,Kozhikode,11.68633,75.67754,Potato,10%+ cheaper than the Kerala median,27.0,-16.0,267
+Kanjangadu,Kasaragod,12.3094,75.0961,Potato,Within 10% of the median,30.0,-6.0,284
+Kanjirappally,Kottayam,9.5838,76.7827,Potato,10%+ dearer than the Kerala median,38.0,19.0,272
+Kattappana,Idukki,9.75429,77.11576,Potato,Within 10% of the median,30.0,-6.0,181
+Kayamkulam,Alappuzha,9.17,76.5,Potato,10%+ cheaper than the Kerala median,22.0,-31.0,337
+Kodungalloor,Thrissur,10.2277,76.19712,Potato,Within 10% of the median,35.0,9.0,34
+Koduvayoor,Palakkad,10.66,76.65,Potato,Within 10% of the median,34.0,6.0,345
+Kollengode,Palakkad,10.61,76.69,Potato,Within 10% of the median,32.0,0.0,256
+Kondotty,Malappuram,11.1457,75.96426,Potato,10%+ cheaper than the Kerala median,28.0,-12.0,185
+Kothamangalam,Ernakulam,10.0667,76.6333,Potato,Within 10% of the median,35.0,9.0,255
+Kottakkal,Malappuram,11.00011,75.99883,Potato,10%+ cheaper than the Kerala median,25.0,-22.0,228
+Kottarakkara,Kollam,9.006,76.772,Potato,10%+ dearer than the Kerala median,42.0,31.0,239
+Kottayam,Kottayam,9.6,76.5667,Potato,Within 10% of the median,34.0,6.0,224
+Kuruppanthura,Kottayam,9.74052,76.51522,Potato,10%+ dearer than the Kerala median,40.0,25.0,145
+Madhavapuram,Alappuzha,9.498,76.3388,Potato,10%+ cheaper than the Kerala median,27.0,-16.0,204
+Manjeri,Malappuram,11.1202,76.12,Potato,10%+ cheaper than the Kerala median,24.5,-23.0,213
+Manjeswaram,Kasaragod,12.7066,74.9018,Potato,10%+ cheaper than the Kerala median,28.0,-12.0,242
+Mannar,Alappuzha,9.31714,76.53437,Potato,Within 10% of the median,32.0,0.0,50
+Mukkom,Kozhikode,11.32149,75.99529,Potato,10%+ cheaper than the Kerala median,26.0,-19.0,280
+Munnar,Idukki,10.089,77.06,Potato,10%+ dearer than the Kerala median,45.0,41.0,53
+Nedumkandam,Idukki,9.83626,77.15714,Potato,Within 10% of the median,30.0,-6.0,97
+Neeleswaram,Kasaragod,12.2595,75.1352,Potato,Within 10% of the median,34.0,6.0,245
+North Paravur,Ernakulam,10.14,76.23,Potato,10%+ dearer than the Kerala median,45.0,41.0,267
+Pala,Kottayam,9.71309,76.68328,Potato,10%+ dearer than the Kerala median,36.0,12.0,259
+Palakkad,Palakkad,10.7847,76.6531,Potato,10%+ dearer than the Kerala median,36.0,12.0,279
+Palayam,Kozhikode,11.25278,75.78552,Potato,10%+ cheaper than the Kerala median,21.0,-34.0,182
+Pampady,Kottayam,9.56566,76.64416,Potato,10%+ dearer than the Kerala median,40.0,25.0,177
+Parappanangadi,Malappuram,11.05397,75.85552,Potato,10%+ cheaper than the Kerala median,22.0,-31.0,300
+Pattambi,Palakkad,10.81,76.02,Potato,10%+ cheaper than the Kerala median,28.0,-12.0,296
+Perambra,Kozhikode,11.56395,75.75645,Potato,10%+ cheaper than the Kerala median,26.0,-19.0,240
+Perinthalmanna,Malappuram,10.97604,76.22544,Potato,10%+ cheaper than the Kerala median,26.0,-19.0,196
+Perumbavoor,Ernakulam,10.11,76.48,Potato,Within 10% of the median,32.0,0.0,276
+Piravam,Ernakulam,9.87,76.49,Potato,10%+ dearer than the Kerala median,45.0,41.0,198
+Pothencode,Thiruvananthapuram,8.61842,76.89769,Potato,10%+ dearer than the Kerala median,45.0,41.0,160
+Punalur,Kollam,9.01761,76.92609,Potato,10%+ cheaper than the Kerala median,28.0,-12.0,195
+Quilandy,Kozhikode,11.45,75.69,Potato,10%+ cheaper than the Kerala median,26.5,-17.0,92
+Taliparamba,Kannur,12.229,75.2133,Potato,Within 10% of the median,30.0,-6.0,328
+Thalasserry,Kannur,11.75001,75.49507,Potato,10%+ cheaper than the Kerala median,23.0,-28.0,345
+Thalayolaparambu,Kottayam,9.78499,76.44959,Potato,Within 10% of the median,30.0,-6.0,259
+Thamarassery,Kozhikode,11.4083,75.9203,Potato,10%+ cheaper than the Kerala median,26.0,-19.0,115
+Thirurrangadi,Malappuram,11.05,75.93,Potato,Within 10% of the median,29.0,-9.0,101
+Thodupuzha,Idukki,9.89593,76.71841,Potato,Within 10% of the median,32.0,0.0,104
+Thrippunithura,Ernakulam,9.94868,76.34636,Potato,10%+ dearer than the Kerala median,38.0,19.0,273
+Thrissur,Thrissur,10.52,76.21,Potato,Within 10% of the median,30.0,-6.0,195
+Vadakkenchery,Palakkad,10.60079,76.4904,Potato,10%+ dearer than the Kerala median,50.0,56.0,282
+Vamanapuram,Thiruvananthapuram,8.72188,76.898,Potato,Within 10% of the median,35.0,9.0,251
+Vandiperiyar,Idukki,9.5703,77.0897,Potato,10%+ dearer than the Kerala median,40.0,25.0,264
+Wadakkanchery,Thrissur,10.6594,76.2494,Potato,Within 10% of the median,35.0,9.0,216
+Adimali,Idukki,10.0115,76.95278,Tomato,10%+ dearer than the Kerala median,50.0,43.0,230
+Aluva,Ernakulam,10.1064,76.3512,Tomato,Within 10% of the median,35.0,0.0,264
+Anchal,Kollam,8.93002,76.90647,Tomato,Within 10% of the median,37.0,6.0,302
+Angamaly,Ernakulam,10.19,76.39,Tomato,10%+ dearer than the Kerala median,45.0,29.0,258
+Aralamoodu,Thiruvananthapuram,8.52414,76.93664,Tomato,10%+ dearer than the Kerala median,48.5,39.0,276
+Aroor,Alappuzha,9.87819,76.30387,Tomato,10%+ dearer than the Kerala median,41.0,17.0,147
+Athirampuzha,Kottayam,9.6595,76.5267,Tomato,Within 10% of the median,37.0,6.0,221
+Attingal,Thiruvananthapuram,8.6986,76.81344,Tomato,10%+ dearer than the Kerala median,40.0,14.0,196
+Balarampuram,Thiruvananthapuram,8.43206,77.05028,Tomato,10%+ dearer than the Kerala median,50.0,43.0,251
+Broadway,Ernakulam,9.97984,76.27768,Tomato,10%+ dearer than the Kerala median,42.0,20.0,211
+Chala,Thiruvananthapuram,8.48398,76.95134,Tomato,Within 10% of the median,35.0,0.0,186
+Chalakudy,Thrissur,10.30701,76.33406,Tomato,10%+ dearer than the Kerala median,40.0,14.0,142
+Chathanoor,Kollam,8.86,76.72,Tomato,10%+ dearer than the Kerala median,70.0,100.0,215
+Chavakkad,Thrissur,10.57824,76.01909,Tomato,Within 10% of the median,35.0,0.0,249
+Chelakkara,Thrissur,10.692,76.343,Tomato,Within 10% of the median,35.0,0.0,302
+Chengannur,Alappuzha,9.32,76.61,Tomato,10%+ dearer than the Kerala median,40.0,14.0,239
+Ernakulam,Ernakulam,9.98,76.28,Tomato,Within 10% of the median,38.0,9.0,235
+Ettumanoor,Kottayam,9.6738,76.5567,Tomato,10%+ dearer than the Kerala median,39.0,11.0,226
+Kallachi,Kozhikode,11.6863,75.6775,Tomato,10%+ cheaper than the Kerala median,28.0,-20.0,270
+Kanjangadu,Kasaragod,12.3094,75.0961,Tomato,10%+ cheaper than the Kerala median,24.0,-31.0,285
+Kanjirappally,Kottayam,9.5838,76.7827,Tomato,10%+ dearer than the Kerala median,58.0,66.0,268
+Kattappana,Idukki,9.75572,77.1154,Tomato,10%+ dearer than the Kerala median,42.0,20.0,94
+Kayamkulam,Alappuzha,9.17,76.5,Tomato,Within 10% of the median,32.0,-9.0,328
+Kodungalloor,Thrissur,10.22,76.22,Tomato,10%+ dearer than the Kerala median,40.0,14.0,42
+Koduvayoor,Palakkad,10.66,76.65,Tomato,10%+ cheaper than the Kerala median,26.0,-26.0,341
+Kollam,Kollam,8.88705,76.59067,Tomato,Within 10% of the median,33.0,-6.0,228
+Kollengode,Palakkad,10.61,76.69,Tomato,10%+ cheaper than the Kerala median,27.0,-23.0,245
+Kondotty,Malappuram,11.1526,75.9567,Tomato,10%+ cheaper than the Kerala median,30.0,-14.0,175
+Kothamangalam,Ernakulam,10.0667,76.6333,Tomato,Within 10% of the median,35.0,0.0,254
+Kottakkal,Malappuram,11.00011,75.99883,Tomato,10%+ cheaper than the Kerala median,27.0,-23.0,225
+Kottarakkara,Kollam,9.006,76.772,Tomato,Within 10% of the median,37.0,6.0,247
+Kottayam,Kottayam,9.59157,76.52215,Tomato,10%+ dearer than the Kerala median,40.0,14.0,218
+Kuruppanthura,Kottayam,9.74,76.52,Tomato,10%+ dearer than the Kerala median,50.0,43.0,164
+Kuthuparambu,Kannur,11.83,75.56551,Tomato,10%+ cheaper than the Kerala median,30.0,-14.0,282
+Madhavapuram,Alappuzha,9.498,76.3388,Tomato,Within 10% of the median,32.0,-9.0,139
+Madikai  Vfpck,Kasaragod,12.29868,75.13994,Tomato,10%+ cheaper than the Kerala median,22.0,-37.0,52
+Manjeri,Malappuram,11.1202,76.12,Tomato,10%+ cheaper than the Kerala median,26.5,-24.0,210
+Manjeswaram,Kasaragod,12.7066,74.9018,Tomato,10%+ cheaper than the Kerala median,23.0,-34.0,244
+Mannar,Alappuzha,9.317,76.534,Tomato,10%+ dearer than the Kerala median,40.0,14.0,44
+Moochamkundu Vfpck,Palakkad,10.58,76.76,Tomato,10%+ cheaper than the Kerala median,25.5,-27.0,60
+Mukkom,Kozhikode,11.32149,75.99529,Tomato,10%+ cheaper than the Kerala median,28.0,-20.0,279
+Munnar,Idukki,10.089,77.06,Tomato,10%+ dearer than the Kerala median,45.0,29.0,54
+Nedumkandam,Idukki,9.84,77.16,Tomato,10%+ dearer than the Kerala median,40.0,14.0,88
+Neyyatinkara,Thiruvananthapuram,8.39949,77.0872,Tomato,Within 10% of the median,37.0,6.0,274
+North Paravur,Ernakulam,10.14,76.23,Tomato,Within 10% of the median,35.0,0.0,268
+Pala,Kottayam,9.7138,76.6829,Tomato,10%+ dearer than the Kerala median,48.0,37.0,259
+Palakkad,Palakkad,10.78673,76.65479,Tomato,Within 10% of the median,36.0,3.0,281
+Palayam,Kozhikode,11.25278,75.78552,Tomato,10%+ cheaper than the Kerala median,22.1,-37.0,181
+Pampady,Kottayam,9.56566,76.64416,Tomato,10%+ dearer than the Kerala median,45.0,29.0,166
+Parappanangadi,Malappuram,11.06051,75.85078,Tomato,10%+ cheaper than the Kerala median,25.0,-29.0,301
+Parassala,Thiruvananthapuram,8.3431,77.1526,Tomato,Within 10% of the median,35.0,0.0,180
+Pattambi,Palakkad,10.81,76.02,Tomato,10%+ cheaper than the Kerala median,28.0,-20.0,286
+Perambra,Kozhikode,11.5575,75.7605,Tomato,10%+ cheaper than the Kerala median,30.0,-14.0,242
+Perinthalmanna,Malappuram,10.97604,76.22544,Tomato,10%+ cheaper than the Kerala median,25.0,-29.0,164
+Perumatty Vfpck,Palakkad,10.72,76.734,Tomato,10%+ cheaper than the Kerala median,25.0,-29.0,49
+Perumbavoor,Ernakulam,10.11,76.48,Tomato,Within 10% of the median,38.0,9.0,274
+Piravam,Ernakulam,9.87307,76.49195,Tomato,10%+ dearer than the Kerala median,45.0,29.0,163
+Pothencode,Thiruvananthapuram,8.61842,76.89769,Tomato,10%+ dearer than the Kerala median,50.0,43.0,286
+Punalur,Kollam,9.01761,76.92609,Tomato,Within 10% of the median,38.0,9.0,175
+Quilandy,Kozhikode,11.45,75.69,Tomato,10%+ cheaper than the Kerala median,26.0,-26.0,280
+Sasthamkotta,Kollam,9.03146,76.60098,Tomato,Within 10% of the median,32.0,-9.0,222
+Taliparamba,Kannur,12.229,75.2133,Tomato,10%+ cheaper than the Kerala median,28.0,-20.0,328
+Thalasserry,Kannur,11.74914,75.48903,Tomato,10%+ cheaper than the Kerala median,26.0,-26.0,342
+Thalayolaparambu,Kottayam,9.7862,76.4485,Tomato,Within 10% of the median,36.0,3.0,254
+Thamarassery,Kozhikode,11.41459,75.93632,Tomato,10%+ cheaper than the Kerala median,26.0,-26.0,178
+Thirurrangadi,Malappuram,11.04299,75.92726,Tomato,10%+ cheaper than the Kerala median,26.0,-26.0,163
+Thodupuzha,Idukki,9.89593,76.71841,Tomato,10%+ dearer than the Kerala median,40.0,14.0,108
+Thrippunithura,Ernakulam,9.95,76.35,Tomato,10%+ dearer than the Kerala median,47.0,34.0,274
+Thrissur,Thrissur,10.52,76.21,Tomato,10%+ cheaper than the Kerala median,30.0,-14.0,208
+Vadakarapathy,Palakkad,10.798,76.8358,Tomato,10%+ cheaper than the Kerala median,24.0,-31.0,181
+Vadakkenchery,Palakkad,10.58937,76.47992,Tomato,10%+ dearer than the Kerala median,40.0,14.0,282
+Vamanapuram,Thiruvananthapuram,8.72188,76.898,Tomato,Within 10% of the median,35.0,0.0,165
+Vandiperiyar,Idukki,9.57211,77.0896,Tomato,10%+ dearer than the Kerala median,44.0,26.0,262
+Vengeri(Kozhikode),Kozhikode,11.2858,75.8055,Tomato,10%+ cheaper than the Kerala median,28.0,-20.0,262
+Wadakkanchery,Thrissur,10.6594,76.2494,Tomato,Within 10% of the median,35.0,0.0,215

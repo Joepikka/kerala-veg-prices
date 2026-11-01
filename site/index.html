@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala Vegetable Prices</title>
+<meta name="description" content="How tomato, onion and potato price shocks reach Kerala, how far apart nearby markets price the same crop, and a model that warns of spikes about 16 days ahead. 26.5 million mandi records, 2021 to May 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the findings</a>
+
+<header class="mast">
+  <div class="container mast-row">
+    <a class="wordmark" href="#top">Kerala vegetable prices</a>
+    <nav aria-label="Sections">
+      <a href="#premium">Premium</a>
+      <a href="#gaps">Market gaps</a>
+      <a href="#shocks">Shocks</a>
+      <a href="#warning">Warning model</a>
+      <a href="#method">Method</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero container" id="top" aria-labelledby="hero-head">
+    <div class="hero-copy">
+      <h1 id="hero-head">Kerala pays more, and pays later.</h1>
+      <p class="lead">Five years of mandi prices show where vegetable shocks start, and when.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#warning">See the 16-day warning</a>
+        <a class="btn" href="https://github.com/Joepikka/kerala-veg-prices">Read the code</a>
+      </div>
+    </div>
+
+    <figure class="sheet hero-sheet">
+      <div class="sheet-head">
+        <span>Median wholesale price</span>
+        <span>Jun 2025 to May 2026</span>
+      </div>
+      <table>
+        <thead><tr><th scope="col">Crop</th><th scope="col" class="num">Kerala, Rs/kg</th><th scope="col" class="num">All-India, Rs/kg</th><th scope="col" class="num">Kerala pays</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Tomato</th><td class="num">38.2</td><td class="num">20.1</td><td class="num">1.9x</td></tr>
+          <tr><th scope="row">Onion</th><td class="num">31.0</td><td class="num">11.8</td><td class="num">2.6x</td></tr>
+          <tr class="mark"><th scope="row">Potato</th><td class="num">35.1</td><td class="num">10.7</td><td class="num">3.3x</td></tr>
+        </tbody>
+      </table>
+      <figcaption>All-India is weighted by arrivals, so the producing hubs dominate it. The gap includes transport, handling, losses and margins.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section container" id="premium" aria-labelledby="premium-head">
+    <div class="section-head">
+      <h2 id="premium-head">The gap never closes</h2>
+      <p>Across 65 months, Kerala’s wholesale price was never below the national one. The median month: tomato 1.74x, onion 1.85x, potato 2.53x.</p>
+    </div>
+    <figure class="chart">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/30761381"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><a href="https://public.flourish.studio/visualisation/30761381/">Open the interactive chart of Kerala and all-India weekly prices</a></noscript></div>
+      <figcaption>Weekly mean of daily arrival-weighted modal prices. Pick a crop above the chart. <a href="https://github.com/Joepikka/kerala-veg-prices/blob/main/reports/flourish/05_price_by_crop_long.csv">The chart’s data</a>.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section container split" id="gaps" aria-labelledby="gaps-head">
+    <div class="section-head">
+      <h2 id="gaps-head">Forty kilometres, twenty per cent</h2>
+      <p>On the same day, two tomato markets within 40 km of each other differ by 20% or more half the time.</p>
+      <table class="compact">
+        <caption>Pairs of Kerala markets within 40 km, same crop, same day</caption>
+        <thead><tr><th scope="col">Crop</th><th scope="col" class="num">Pair-days</th><th scope="col" class="num">Median gap</th><th scope="col" class="num">Gap of 20%+</th></tr></thead>
+        <tbody>
+          <tr class="mark"><th scope="row">Tomato</th><td class="num">207,226</td><td class="num">20.0%</td><td class="num">50.1%</td></tr>
+          <tr><th scope="row">Potato</th><td class="num">176,427</td><td class="num">15.4%</td><td class="num">39.8%</td></tr>
+          <tr><th scope="row">Onion</th><td class="num">200,317</td><td class="num">13.9%</td><td class="num">35.5%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figure class="chart map" data-map>
+      <div class="flourish-embed flourish-map" data-src="visualisation/30761416"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><a href="https://public.flourish.studio/visualisation/30761416/">Open the interactive map of Kerala tomato markets</a></noscript></div>
+      <figcaption>Each Kerala market’s median tomato price, Jun 2025 to May 2026, against the Kerala median. The north is cheaper: markets above 11°N sit a median 26% below it, those below 9.5°N 6% above (Spearman −0.69 with latitude; onion and potato about −0.5).</figcaption>
+    </figure>
+  </section>
+
+  <section class="section container" id="shocks" aria-labelledby="shocks-head">
+    <div class="section-head">
+      <h2 id="shocks-head">Shocks arrive within the week</h2>
+      <p>A price jump in Kolar, Pimpalgaon, Bangalore or the Uttar Pradesh potato belt shows up in Kerala the same week.</p>
+    </div>
+    <div class="sheet">
+      <div class="sheet-head"><span>Weekly price changes, origin hubs to Kerala, 2021 to May 2026</span><span>280 weeks</span></div>
+      <table>
+        <thead><tr><th scope="col">Crop</th><th scope="col" class="num">Same-week correlation</th><th scope="col" class="num">Share of a rise passed on</th><th scope="col" class="num">Share of a fall passed on</th><th scope="col" class="num">Rise and fall differ? (p)</th></tr></thead>
+        <tbody>
+          <tr class="mark"><th scope="row">Tomato</th><td class="num">0.57</td><td class="num">74%</td><td class="num">63%</td><td class="num">0.46</td></tr>
+          <tr><th scope="row">Onion</th><td class="num">0.47</td><td class="num">79%</td><td class="num">65%</td><td class="num">0.36</td></tr>
+          <tr><th scope="row">Potato</th><td class="num">0.18</td><td class="num">22%</td><td class="num">35%</td><td class="num">0.31</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Sum of three weekly lags, Newey-West errors. Rises pass on slightly more than falls, not significantly; pre-2019 onion studies found clear asymmetry.</p>
+    </div>
+    <dl class="figures">
+      <div><dt>Kerala spikes since 2021</dt><dd class="num">28</dd></div>
+      <div><dt>Hub spiked first</dt><dd class="num">22</dd></div>
+      <div><dt>Median head start</dt><dd class="num">14.5 days</dd></div>
+    </dl>
+  </section>
+
+  <section class="section container" id="warning" aria-labelledby="warning-head">
+    <div class="section-head">
+      <h2 id="warning-head">A warning about 16 days ahead</h2>
+      <p>Will Kerala’s price be 30% higher in two weeks? A logistic model on hub prices, arrivals and hub rainfall answers better than a trader’s rules.</p>
+    </div>
+    <div class="sheet">
+      <div class="sheet-head"><span>Test period Apr 2025 to May 2026, never used for training or tuning</span><span>1,236 crop-days, 49 spike days</span></div>
+      <table>
+        <thead><tr><th scope="col">Approach</th><th scope="col" class="num">PR-AUC</th><th scope="col" class="num">Precision</th><th scope="col" class="num">Recall</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Kerala price already rising</th><td class="num">0.09</td><td class="num">0.16</td><td class="num">0.24</td></tr>
+          <tr><th scope="row">Hub price rising</th><td class="num">0.10</td><td class="num">0.17</td><td class="num">0.18</td></tr>
+          <tr><th scope="row">Logistic, market data only</th><td class="num">0.17</td><td class="num">0.15</td><td class="num">0.12</td></tr>
+          <tr class="mark"><th scope="row">Logistic, market and weather</th><td class="num">0.33</td><td class="num">0.32</td><td class="num">0.29</td></tr>
+          <tr><th scope="row">Logistic, market, weather and news</th><td class="num">0.21</td><td class="num">0.27</td><td class="num">0.22</td></tr>
+          <tr><th scope="row">Gradient boosting, market and weather</th><td class="num">0.23</td><td class="num">0.67</td><td class="num">0.12</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Chance is 0.04. The model was chosen on a separate validation period. Scraped news coverage made it worse, so it is left out.</p>
+    </div>
+    <div class="events">
+      <h3>The five spikes in the test period</h3>
+      <table class="compact">
+        <thead><tr><th scope="col">Crop</th><th scope="col">Started</th><th scope="col" class="num">Rise</th><th scope="col" class="num">First alert, days before the peak</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Tomato</th><td>26 May 2025</td><td class="num">+43%</td><td class="num">4</td></tr>
+          <tr><th scope="row">Tomato</th><td>18 Jul 2025</td><td class="num">+52%</td><td class="num">missed</td></tr>
+          <tr><th scope="row">Onion</th><td>16 Oct 2025</td><td class="num">+65%</td><td class="num">17</td></tr>
+          <tr class="mark"><th scope="row">Tomato</th><td>30 Oct 2025</td><td class="num">+136%</td><td class="num">42</td></tr>
+          <tr><th scope="row">Tomato</th><td>22 Apr 2026</td><td class="num">+33%</td><td class="num">15</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Four of five warned, a median of 16 days ahead, at a cost of about 0.7 false-alert days per crop per month.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="do-head">
+    <div class="container band-grid">
+      <h2 id="do-head">What a buyer can do with this</h2>
+      <ol class="do">
+        <li><span>Watch Kolar, Pimpalgaon and Bangalore, not Kerala.</span> The hub moves first in most spikes, by about two weeks.</li>
+        <li><span>Buy forward when the model alerts.</span> Hotels, cooperatives and Supplyco can contract or stock before the peak.</li>
+        <li><span>Compare nearby markets every day.</span> Half the time a tomato market within 40 km is 20% cheaper, and Malabar markets usually undercut the south.</li>
+        <li><span>Do not lean on the news.</span> Adding news coverage to the model made its warnings worse, not better.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section container" id="method" aria-labelledby="method-head">
+    <div class="section-head">
+      <h2 id="method-head">How it was built</h2>
+      <p>Every number here is rebuilt from the raw files by scripts in the repository.</p>
+    </div>
+    <div class="method">
+      <div>
+        <h3>Data</h3>
+        <p>26,504,208 Agmarknet records (2021 to May 2026) from India Data Portal, ISB, under ODC-By. Agmarknet’s own site and the Consumer Affairs price portal sit behind a CAPTCHA and were not scraped. Rainfall and temperature at each hub from the Open-Meteo archive. News volume from the GDELT API, fetched with Scrapling at one request per five seconds.</p>
+      </div>
+      <div>
+        <h3>Cleaning</h3>
+        <p>3.23 million tomato, onion and potato records. The two sources and the old source’s two market-code systems were merged into 2,007 markets, and duplicate reports removed. Market-days more than three times off their state’s median were dropped: under 2% in Kerala, including one market reporting a flat Rs 270/kg for weeks. Thirteen data tests run on every build.</p>
+      </div>
+      <div>
+        <h3>Limits</h3>
+        <p>These are wholesale prices, not shop prices. Kerala’s premium is not a margin. The test period holds only five spikes, so the warning’s hit rate is a small sample. Correlation in prices is not proof of where a shock started.</p>
+      </div>
+    </div>
+    <details class="refs">
+      <summary>Published work this compares against</summary>
+      <ul>
+        <li><a href="https://www.tandfonline.com/doi/full/10.1080/23322039.2024.2402557">Asymmetric and threshold price transmission in onion markets in India</a>, Cogent Economics &amp; Finance, 2024.</li>
+        <li><a href="https://www.researchgate.net/publication/393991410">Market analysis and price dynamics in perishable crop supply chains in India</a>, 2025.</li>
+        <li><a href="https://www.researchgate.net/publication/379688308">Price transmission in major tomato markets of India</a>, 2024.</li>
+        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12215695/">Enhancing agricultural commodity price forecasting with deep learning</a>, Scientific Reports, 2025.</li>
+        <li><a href="https://link.springer.com/article/10.1007/s11540-024-09823-z">Deep learning approaches for potato price forecasting</a>, Potato Research, 2025.</li>
+        <li><a href="https://arxiv.org/abs/2407.00698">NourishNet: severity-state forecasting of food commodity prices</a>, arXiv, 2024.</li>
+        <li><a href="https://agritech.tnau.ac.in/govt_schemes_services/pdf/tomato,%20onion%20and%20potato.pdf">Vegetables inflation in India: tomato, onion and potato</a>, TNAU.</li>
+      </ul>
+    </details>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot-row">
+    <p>Built by Joe Kanjirathingal, B.Tech Artificial Intelligence, Thrissur.</p>
+    <nav aria-label="Elsewhere">
+      <a href="https://github.com/Joepikka/kerala-veg-prices">Source code</a>
+      <a href="https://joe-kanjirathingal-portfolio-v2.vercel.app">Portfolio</a>
+      <a href="mailto:joepikka5@gmail.com">Email</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

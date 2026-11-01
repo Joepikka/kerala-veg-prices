@@ -1,0 +1,20 @@
+commodity,kind,state,market,market_key,lat,lon,tonnes,days
+Onion,national,Gujarat,Mahuva(Station Road),Gujarat|mahuva(stationroad),21.09442,71.76414,3739026.0,1227
+Onion,national,Telangana,Mahboob Manison,Telangana|mahboobmanison,17.3755267,78.5059176,3651411.0,1216
+Onion,national,Maharashtra,Solapur,Maharashtra|solapur,17.697016132003032,75.92926024625521,3452198.0,1412
+Onion,national,Maharashtra,Pimpalgaon,Maharashtra|pimpalgaon,20.194857178822016,73.95324257973668,2769749.0,1473
+Onion,neighbour,Karnataka,Bangalore,Karnataka|bangalore,12.96685,77.58742,2355910.0,939
+Onion,neighbour,Karnataka,Hubli (Amaragol),Karnataka|hubli(amaragol),15.3994715,75.0830157,473928.0,1285
+Onion,neighbour,Karnataka,Belgaum,Karnataka|belgaum,15.8496953,74.4976741,394389.0,1091
+Potato,national,Uttar Pradesh,Kanpur(Grain),Uttar Pradesh|kanpur(grain),29.58794,77.42758,4030779.0,1573
+Potato,national,Uttar Pradesh,Farukhabad,Uttar Pradesh|farukhabad,27.39048,79.58006,3103103.0,1759
+Potato,national,Uttar Pradesh,Kannauj,Uttar Pradesh|kannauj,27.0514156,79.9136731,2862617.0,1622
+Potato,national,Uttar Pradesh,Agra,Uttar Pradesh|agra,27.1766701,78.0080745,2716836.0,1640
+Potato,neighbour,Karnataka,Bangalore,Karnataka|bangalore,12.9715987,77.5945627,1102563.0,993
+Potato,neighbour,Karnataka,Belgaum,Karnataka|belgaum,15.86702,74.51167,183948.0,1149
+Potato,neighbour,Karnataka,Hubli (Amaragol),Karnataka|hubli(amaragol),15.39723,75.0908,162517.0,1284
+Tomato,national,Karnataka,Kolar,Karnataka|kolar,13.1362143,78.1290986,2090321.0,1786
+Tomato,national,Maharashtra,Pimpalgaon,Maharashtra|pimpalgaon,18.73333,73.96667,1558807.0,1465
+Tomato,national,Delhi,Azadpur,Delhi|azadpur,28.7146959,77.1770461,770937.0,1477
+Tomato,national,Karnataka,Chintamani,Karnataka|chintamani,13.2651467,78.0963239,679974.0,1609
+Tomato,neighbour,Karnataka,Mulabagilu,Karnataka|mulabagilu,13.1666533,78.3940737,317078.0,1242

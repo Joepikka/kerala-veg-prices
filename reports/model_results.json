@@ -1,0 +1,243 @@
+{
+ "rows": {
+  "train": 3695,
+  "valid": 780,
+  "test": 1236
+ },
+ "positives": {
+  "train": 276,
+  "valid": 35,
+  "test": 49
+ },
+ "rules": {
+  "Kerala price already rising (7-day momentum)": {
+   "threshold": 0.14,
+   "valid": {
+    "pr_auc": 0.221,
+    "precision": 0.347,
+    "recall": 0.486,
+    "f1": 0.405,
+    "alerts": 49,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.088,
+    "precision": 0.16,
+    "recall": 0.245,
+    "f1": 0.194,
+    "alerts": 75,
+    "base_rate": 0.04
+   }
+  },
+  "Hub price rising (14-day momentum)": {
+   "threshold": 0.4209,
+   "valid": {
+    "pr_auc": 0.488,
+    "precision": 0.857,
+    "recall": 0.343,
+    "f1": 0.49,
+    "alerts": 14,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.098,
+    "precision": 0.167,
+    "recall": 0.184,
+    "f1": 0.175,
+    "alerts": 54,
+    "base_rate": 0.04
+   }
+  }
+ },
+ "models": {
+  "logistic | market": {
+   "threshold": 0.9748,
+   "valid": {
+    "pr_auc": 0.466,
+    "precision": 0.857,
+    "recall": 0.343,
+    "f1": 0.49,
+    "alerts": 14,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.171,
+    "precision": 0.15,
+    "recall": 0.122,
+    "f1": 0.135,
+    "alerts": 40,
+    "base_rate": 0.04
+   },
+   "test_brier": 0.2124
+  },
+  "gradient_boosting | market": {
+   "threshold": 0.8633,
+   "valid": {
+    "pr_auc": 0.287,
+    "precision": 0.481,
+    "recall": 0.371,
+    "f1": 0.419,
+    "alerts": 27,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.135,
+    "precision": 0.178,
+    "recall": 0.163,
+    "f1": 0.17,
+    "alerts": 45,
+    "base_rate": 0.04
+   },
+   "test_brier": 0.0795
+  },
+  "logistic | market+weather": {
+   "threshold": 0.9843,
+   "valid": {
+    "pr_auc": 0.493,
+    "precision": 0.857,
+    "recall": 0.343,
+    "f1": 0.49,
+    "alerts": 14,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.327,
+    "precision": 0.318,
+    "recall": 0.286,
+    "f1": 0.301,
+    "alerts": 44,
+    "base_rate": 0.04
+   },
+   "test_brier": 0.199
+  },
+  "gradient_boosting | market+weather": {
+   "threshold": 0.9284,
+   "valid": {
+    "pr_auc": 0.349,
+    "precision": 0.818,
+    "recall": 0.257,
+    "f1": 0.391,
+    "alerts": 11,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.233,
+    "precision": 0.667,
+    "recall": 0.122,
+    "f1": 0.207,
+    "alerts": 9,
+    "base_rate": 0.04
+   },
+   "test_brier": 0.061
+  },
+  "logistic | market+weather+news": {
+   "threshold": 0.9913,
+   "valid": {
+    "pr_auc": 0.478,
+    "precision": 0.786,
+    "recall": 0.314,
+    "f1": 0.449,
+    "alerts": 14,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.206,
+    "precision": 0.268,
+    "recall": 0.224,
+    "f1": 0.244,
+    "alerts": 41,
+    "base_rate": 0.04
+   },
+   "test_brier": 0.2161
+  },
+  "gradient_boosting | market+weather+news": {
+   "threshold": 0.909,
+   "valid": {
+    "pr_auc": 0.388,
+    "precision": 0.909,
+    "recall": 0.286,
+    "f1": 0.435,
+    "alerts": 11,
+    "base_rate": 0.045
+   },
+   "test": {
+    "pr_auc": 0.132,
+    "precision": 0.294,
+    "recall": 0.102,
+    "f1": 0.152,
+    "alerts": 17,
+    "base_rate": 0.04
+   },
+   "test_brier": 0.0659
+  }
+ },
+ "selected_on_validation": "logistic | market+weather",
+ "events_test": {
+  "events": 5,
+  "warned": 4,
+  "median_days_before_peak": 16.0,
+  "false_alert_days_per_month": 0.74,
+  "detail": [
+   {
+    "commodity": "Tomato",
+    "start": "2025-05-26",
+    "peak": "2025-06-13",
+    "price_start": 2093.0,
+    "price_peak": 2982.0,
+    "rise_pct": 42.5,
+    "hub_start": "2025-05-22",
+    "hub_lead_days": 4,
+    "warned": true,
+    "days_before_peak": 4
+   },
+   {
+    "commodity": "Tomato",
+    "start": "2025-07-18",
+    "peak": "2025-08-03",
+    "price_start": 2751.0,
+    "price_peak": 4171.0,
+    "rise_pct": 51.6,
+    "hub_start": "2025-06-20",
+    "hub_lead_days": 28,
+    "warned": false,
+    "days_before_peak": null
+   },
+   {
+    "commodity": "Tomato",
+    "start": "2025-10-30",
+    "peak": "2025-11-29",
+    "price_start": 2329.0,
+    "price_peak": 5486.0,
+    "rise_pct": 135.5,
+    "hub_start": "2025-10-29",
+    "hub_lead_days": 1,
+    "warned": true,
+    "days_before_peak": 42
+   },
+   {
+    "commodity": "Tomato",
+    "start": "2026-04-22",
+    "peak": "2026-05-06",
+    "price_start": 3640.0,
+    "price_peak": 4850.0,
+    "rise_pct": 33.2,
+    "hub_start": "2026-03-23",
+    "hub_lead_days": 30,
+    "warned": true,
+    "days_before_peak": 15
+   },
+   {
+    "commodity": "Onion",
+    "start": "2025-10-16",
+    "peak": "2025-11-09",
+    "price_start": 2235.0,
+    "price_peak": 3676.0,
+    "rise_pct": 64.5,
+    "hub_start": "2025-10-09",
+    "hub_lead_days": 7,
+    "warned": true,
+    "days_before_peak": 17
+   }
+  ]
+ }
+}

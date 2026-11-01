@@ -1,0 +1,211 @@
+[
+ {
+  "commodity": "Onion",
+  "kind": "national",
+  "state": "Gujarat",
+  "market": "Mahuva(Station Road)",
+  "market_key": "Gujarat|mahuva(stationroad)",
+  "lat": 21.09442,
+  "lon": 71.76414,
+  "tonnes": 3739026.0,
+  "days": 1227
+ },
+ {
+  "commodity": "Onion",
+  "kind": "national",
+  "state": "Telangana",
+  "market": "Mahboob Manison",
+  "market_key": "Telangana|mahboobmanison",
+  "lat": 17.3755267,
+  "lon": 78.5059176,
+  "tonnes": 3651411.0,
+  "days": 1216
+ },
+ {
+  "commodity": "Onion",
+  "kind": "national",
+  "state": "Maharashtra",
+  "market": "Solapur",
+  "market_key": "Maharashtra|solapur",
+  "lat": 17.697016132003032,
+  "lon": 75.92926024625521,
+  "tonnes": 3452198.0,
+  "days": 1412
+ },
+ {
+  "commodity": "Onion",
+  "kind": "national",
+  "state": "Maharashtra",
+  "market": "Pimpalgaon",
+  "market_key": "Maharashtra|pimpalgaon",
+  "lat": 20.194857178822016,
+  "lon": 73.95324257973668,
+  "tonnes": 2769749.0,
+  "days": 1473
+ },
+ {
+  "commodity": "Onion",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Bangalore",
+  "market_key": "Karnataka|bangalore",
+  "lat": 12.96685,
+  "lon": 77.58742,
+  "tonnes": 2355910.0,
+  "days": 939
+ },
+ {
+  "commodity": "Onion",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Hubli (Amaragol)",
+  "market_key": "Karnataka|hubli(amaragol)",
+  "lat": 15.3994715,
+  "lon": 75.0830157,
+  "tonnes": 473928.0,
+  "days": 1285
+ },
+ {
+  "commodity": "Onion",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Belgaum",
+  "market_key": "Karnataka|belgaum",
+  "lat": 15.8496953,
+  "lon": 74.4976741,
+  "tonnes": 394389.0,
+  "days": 1091
+ },
+ {
+  "commodity": "Potato",
+  "kind": "national",
+  "state": "Uttar Pradesh",
+  "market": "Kanpur(Grain)",
+  "market_key": "Uttar Pradesh|kanpur(grain)",
+  "lat": 29.58794,
+  "lon": 77.42758,
+  "tonnes": 4030779.0,
+  "days": 1573
+ },
+ {
+  "commodity": "Potato",
+  "kind": "national",
+  "state": "Uttar Pradesh",
+  "market": "Farukhabad",
+  "market_key": "Uttar Pradesh|farukhabad",
+  "lat": 27.39048,
+  "lon": 79.58006,
+  "tonnes": 3103103.0,
+  "days": 1759
+ },
+ {
+  "commodity": "Potato",
+  "kind": "national",
+  "state": "Uttar Pradesh",
+  "market": "Kannauj",
+  "market_key": "Uttar Pradesh|kannauj",
+  "lat": 27.0514156,
+  "lon": 79.9136731,
+  "tonnes": 2862617.0,
+  "days": 1622
+ },
+ {
+  "commodity": "Potato",
+  "kind": "national",
+  "state": "Uttar Pradesh",
+  "market": "Agra",
+  "market_key": "Uttar Pradesh|agra",
+  "lat": 27.1766701,
+  "lon": 78.0080745,
+  "tonnes": 2716836.0,
+  "days": 1640
+ },
+ {
+  "commodity": "Potato",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Bangalore",
+  "market_key": "Karnataka|bangalore",
+  "lat": 12.9715987,
+  "lon": 77.5945627,
+  "tonnes": 1102563.0,
+  "days": 993
+ },
+ {
+  "commodity": "Potato",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Belgaum",
+  "market_key": "Karnataka|belgaum",
+  "lat": 15.86702,
+  "lon": 74.51167,
+  "tonnes": 183948.0,
+  "days": 1149
+ },
+ {
+  "commodity": "Potato",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Hubli (Amaragol)",
+  "market_key": "Karnataka|hubli(amaragol)",
+  "lat": 15.39723,
+  "lon": 75.0908,
+  "tonnes": 162517.0,
+  "days": 1284
+ },
+ {
+  "commodity": "Tomato",
+  "kind": "national",
+  "state": "Karnataka",
+  "market": "Kolar",
+  "market_key": "Karnataka|kolar",
+  "lat": 13.1362143,
+  "lon": 78.1290986,
+  "tonnes": 2090321.0,
+  "days": 1786
+ },
+ {
+  "commodity": "Tomato",
+  "kind": "national",
+  "state": "Maharashtra",
+  "market": "Pimpalgaon",
+  "market_key": "Maharashtra|pimpalgaon",
+  "lat": 18.73333,
+  "lon": 73.96667,
+  "tonnes": 1558807.0,
+  "days": 1465
+ },
+ {
+  "commodity": "Tomato",
+  "kind": "national",
+  "state": "Delhi",
+  "market": "Azadpur",
+  "market_key": "Delhi|azadpur",
+  "lat": 28.7146959,
+  "lon": 77.1770461,
+  "tonnes": 770937.0,
+  "days": 1477
+ },
+ {
+  "commodity": "Tomato",
+  "kind": "national",
+  "state": "Karnataka",
+  "market": "Chintamani",
+  "market_key": "Karnataka|chintamani",
+  "lat": 13.2651467,
+  "lon": 78.0963239,
+  "tonnes": 679974.0,
+  "days": 1609
+ },
+ {
+  "commodity": "Tomato",
+  "kind": "neighbour",
+  "state": "Karnataka",
+  "market": "Mulabagilu",
+  "market_key": "Karnataka|mulabagilu",
+  "lat": 13.1666533,
+  "lon": 78.3940737,
+  "tonnes": 317078.0,
+  "days": 1242
+ }
+]

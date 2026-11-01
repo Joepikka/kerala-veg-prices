@@ -1,0 +1,76 @@
+market,district,lat,lon,vs_kerala_median,median_rs_per_kg,pct_vs_median,days_reported
+Adimali,Idukki,10.0115,76.95278,10%+ dearer than the Kerala median,50.0,43.0,230
+Aluva,Ernakulam,10.1064,76.3512,Within 10% of the median,35.0,0.0,264
+Anchal,Kollam,8.93002,76.90647,Within 10% of the median,37.0,6.0,302
+Angamaly,Ernakulam,10.19,76.39,10%+ dearer than the Kerala median,45.0,29.0,258
+Aralamoodu,Thiruvananthapuram,8.52414,76.93664,10%+ dearer than the Kerala median,48.5,39.0,276
+Aroor,Alappuzha,9.87819,76.30387,10%+ dearer than the Kerala median,41.0,17.0,147
+Athirampuzha,Kottayam,9.6595,76.5267,Within 10% of the median,37.0,6.0,221
+Attingal,Thiruvananthapuram,8.6986,76.81344,10%+ dearer than the Kerala median,40.0,14.0,196
+Balarampuram,Thiruvananthapuram,8.43206,77.05028,10%+ dearer than the Kerala median,50.0,43.0,251
+Broadway,Ernakulam,9.97984,76.27768,10%+ dearer than the Kerala median,42.0,20.0,211
+Chala,Thiruvananthapuram,8.48398,76.95134,Within 10% of the median,35.0,0.0,186
+Chalakudy,Thrissur,10.30701,76.33406,10%+ dearer than the Kerala median,40.0,14.0,142
+Chathanoor,Kollam,8.86,76.72,10%+ dearer than the Kerala median,70.0,100.0,215
+Chavakkad,Thrissur,10.57824,76.01909,Within 10% of the median,35.0,0.0,249
+Chelakkara,Thrissur,10.692,76.343,Within 10% of the median,35.0,0.0,302
+Chengannur,Alappuzha,9.32,76.61,10%+ dearer than the Kerala median,40.0,14.0,239
+Ernakulam,Ernakulam,9.98,76.28,Within 10% of the median,38.0,9.0,235
+Ettumanoor,Kottayam,9.6738,76.5567,10%+ dearer than the Kerala median,39.0,11.0,226
+Kallachi,Kozhikode,11.6863,75.6775,10%+ cheaper than the Kerala median,28.0,-20.0,270
+Kanjangadu,Kasaragod,12.3094,75.0961,10%+ cheaper than the Kerala median,24.0,-31.0,285
+Kanjirappally,Kottayam,9.5838,76.7827,10%+ dearer than the Kerala median,58.0,66.0,268
+Kattappana,Idukki,9.75572,77.1154,10%+ dearer than the Kerala median,42.0,20.0,94
+Kayamkulam,Alappuzha,9.17,76.5,Within 10% of the median,32.0,-9.0,328
+Kodungalloor,Thrissur,10.22,76.22,10%+ dearer than the Kerala median,40.0,14.0,42
+Koduvayoor,Palakkad,10.66,76.65,10%+ cheaper than the Kerala median,26.0,-26.0,341
+Kollam,Kollam,8.88705,76.59067,Within 10% of the median,33.0,-6.0,228
+Kollengode,Palakkad,10.61,76.69,10%+ cheaper than the Kerala median,27.0,-23.0,245
+Kondotty,Malappuram,11.1526,75.9567,10%+ cheaper than the Kerala median,30.0,-14.0,175
+Kothamangalam,Ernakulam,10.0667,76.6333,Within 10% of the median,35.0,0.0,254
+Kottakkal,Malappuram,11.00011,75.99883,10%+ cheaper than the Kerala median,27.0,-23.0,225
+Kottarakkara,Kollam,9.006,76.772,Within 10% of the median,37.0,6.0,247
+Kottayam,Kottayam,9.59157,76.52215,10%+ dearer than the Kerala median,40.0,14.0,218
+Kuruppanthura,Kottayam,9.74,76.52,10%+ dearer than the Kerala median,50.0,43.0,164
+Kuthuparambu,Kannur,11.83,75.56551,10%+ cheaper than the Kerala median,30.0,-14.0,282
+Madhavapuram,Alappuzha,9.498,76.3388,Within 10% of the median,32.0,-9.0,139
+Madikai  Vfpck,Kasaragod,12.29868,75.13994,10%+ cheaper than the Kerala median,22.0,-37.0,52
+Manjeri,Malappuram,11.1202,76.12,10%+ cheaper than the Kerala median,26.5,-24.0,210
+Manjeswaram,Kasaragod,12.7066,74.9018,10%+ cheaper than the Kerala median,23.0,-34.0,244
+Mannar,Alappuzha,9.317,76.534,10%+ dearer than the Kerala median,40.0,14.0,44
+Moochamkundu Vfpck,Palakkad,10.58,76.76,10%+ cheaper than the Kerala median,25.5,-27.0,60
+Mukkom,Kozhikode,11.32149,75.99529,10%+ cheaper than the Kerala median,28.0,-20.0,279
+Munnar,Idukki,10.089,77.06,10%+ dearer than the Kerala median,45.0,29.0,54
+Nedumkandam,Idukki,9.84,77.16,10%+ dearer than the Kerala median,40.0,14.0,88
+Neyyatinkara,Thiruvananthapuram,8.39949,77.0872,Within 10% of the median,37.0,6.0,274
+North Paravur,Ernakulam,10.14,76.23,Within 10% of the median,35.0,0.0,268
+Pala,Kottayam,9.7138,76.6829,10%+ dearer than the Kerala median,48.0,37.0,259
+Palakkad,Palakkad,10.78673,76.65479,Within 10% of the median,36.0,3.0,281
+Palayam,Kozhikode,11.25278,75.78552,10%+ cheaper than the Kerala median,22.1,-37.0,181
+Pampady,Kottayam,9.56566,76.64416,10%+ dearer than the Kerala median,45.0,29.0,166
+Parappanangadi,Malappuram,11.06051,75.85078,10%+ cheaper than the Kerala median,25.0,-29.0,301
+Parassala,Thiruvananthapuram,8.3431,77.1526,Within 10% of the median,35.0,0.0,180
+Pattambi,Palakkad,10.81,76.02,10%+ cheaper than the Kerala median,28.0,-20.0,286
+Perambra,Kozhikode,11.5575,75.7605,10%+ cheaper than the Kerala median,30.0,-14.0,242
+Perinthalmanna,Malappuram,10.97604,76.22544,10%+ cheaper than the Kerala median,25.0,-29.0,164
+Perumatty Vfpck,Palakkad,10.72,76.734,10%+ cheaper than the Kerala median,25.0,-29.0,49
+Perumbavoor,Ernakulam,10.11,76.48,Within 10% of the median,38.0,9.0,274
+Piravam,Ernakulam,9.87307,76.49195,10%+ dearer than the Kerala median,45.0,29.0,163
+Pothencode,Thiruvananthapuram,8.61842,76.89769,10%+ dearer than the Kerala median,50.0,43.0,286
+Punalur,Kollam,9.01761,76.92609,Within 10% of the median,38.0,9.0,175
+Quilandy,Kozhikode,11.45,75.69,10%+ cheaper than the Kerala median,26.0,-26.0,280
+Sasthamkotta,Kollam,9.03146,76.60098,Within 10% of the median,32.0,-9.0,222
+Taliparamba,Kannur,12.229,75.2133,10%+ cheaper than the Kerala median,28.0,-20.0,328
+Thalasserry,Kannur,11.74914,75.48903,10%+ cheaper than the Kerala median,26.0,-26.0,342
+Thalayolaparambu,Kottayam,9.7862,76.4485,Within 10% of the median,36.0,3.0,254
+Thamarassery,Kozhikode,11.41459,75.93632,10%+ cheaper than the Kerala median,26.0,-26.0,178
+Thirurrangadi,Malappuram,11.04299,75.92726,10%+ cheaper than the Kerala median,26.0,-26.0,163
+Thodupuzha,Idukki,9.89593,76.71841,10%+ dearer than the Kerala median,40.0,14.0,108
+Thrippunithura,Ernakulam,9.95,76.35,10%+ dearer than the Kerala median,47.0,34.0,274
+Thrissur,Thrissur,10.52,76.21,10%+ cheaper than the Kerala median,30.0,-14.0,208
+Vadakarapathy,Palakkad,10.798,76.8358,10%+ cheaper than the Kerala median,24.0,-31.0,181
+Vadakkenchery,Palakkad,10.58937,76.47992,10%+ dearer than the Kerala median,40.0,14.0,282
+Vamanapuram,Thiruvananthapuram,8.72188,76.898,Within 10% of the median,35.0,0.0,165
+Vandiperiyar,Idukki,9.57211,77.0896,10%+ dearer than the Kerala median,44.0,26.0,262
+Vengeri(Kozhikode),Kozhikode,11.2858,75.8055,10%+ cheaper than the Kerala median,28.0,-20.0,262
+Wadakkanchery,Thrissur,10.6594,76.2494,Within 10% of the median,35.0,0.0,215

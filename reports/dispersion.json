@@ -1,0 +1,25 @@
+{
+ "Onion": {
+  "pair_days": 200317,
+  "median_gap": 0.1386,
+  "p90_gap": 0.4416,
+  "share_gap_20pct": 0.3548
+ },
+ "Potato": {
+  "pair_days": 176427,
+  "median_gap": 0.1538,
+  "p90_gap": 0.4,
+  "share_gap_20pct": 0.3978
+ },
+ "Tomato": {
+  "pair_days": 207226,
+  "median_gap": 0.2,
+  "p90_gap": 0.5366,
+  "share_gap_20pct": 0.5007
+ },
+ "daily_spread_median": {
+  "Onion": 0.4294,
+  "Potato": 0.4841,
+  "Tomato": 0.7688
+ }
+}

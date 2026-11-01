@@ -1,0 +1,8 @@
+data/
+__pycache__/
+.claude/
+.vercel
+*.pyc
+.venv/
+node_modules/
+.hallmark/
